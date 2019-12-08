@@ -28,18 +28,12 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let strArr = str.split(" ");
-  console.log('strArr', strArr)
-  let results = [];
-  let validator = /[A-Z]+/g;
-  let testResult = validator.test(str);
-  strArr.forEach(element => { 
-    if (validator.test(element) === true){
-      results.push(element)
-    }
-  });
-  console.log('RESULTS', results)
-  return results;
+  let validator = /[A-Z]\w*/g;
+  let testResult = str.match(validator);
+  if (testResult === null){
+    testResult = []
+  } 
+  return testResult;
 };
 
 /* ------------------------------------------------------------------------------------------------
