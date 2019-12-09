@@ -31,7 +31,7 @@ const isCapitalized = (str) => {
   let validator = /[A-Z]\w*/g;
   let testResult = str.match(validator);
   if (testResult === null){
-    testResult = []
+    testResult = [];
   } 
   return testResult;
 };
@@ -43,7 +43,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let validator = /^[A-J]\w*/;
+  let cityResult = [];
+  arr.forEach(elem => {
+    if (validator.test(elem)===true){
+      cityResult.push(elem);
+    }
+  });
+  return cityResult;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -132,7 +139,7 @@ describe('Testing challenge 1', () => {
     expect(isNum('')).toBeFalsy();
   });
 });
-
+ 
 describe('Testing challenge 2', () => {
   test('It should only return words that begin with a capital letter', () => {
     const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
@@ -146,7 +153,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   let cities = ['Cleveland', 'San Diego', 'Birmingham', 'Seattle', 'Miami', 'New York City', 'Omaha', 'Portland', 'Austin', 'Boston', 'Newport Beach', 'Hoboken'];
 
   test('It should return the cities whose names begin with the letters A through J', () => {
