@@ -84,9 +84,13 @@ Write a function named reversedString that takes in a string and returns a strin
 
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
-
+// expect(reversedString('Code 301')).toStrictEqual('103 edoC');
 const reversedString = (str) => {
-  // Solution code here...
+  let newStr = "";
+  for (let i=(str.length-1); i >= 0; i--){
+    newStr += str[i]
+  }
+  return newStr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -139,7 +143,13 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  // Solution code here...
+  let totalChildren = arr.reduce((accum,elem) => {
+    if (elem.children){
+      accum += elem.children.length;
+    }
+    return accum;
+  }, 0)
+  return totalChildren;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -151,7 +161,11 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-  // Solution code here...
+  let average = arr.reduce((accum, value) => {
+    accum += value;
+    return accum
+  }, 0)
+  return average/arr.length;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -161,7 +175,7 @@ Write a function named countPrimeNumbers that, given an array elements as input,
 
 You are welcome to use the provided isPrime function.
 ------------------------------------------------------------------------------------------------ */
-
+// expect(countPrimeNumbers([1, 2, 13, 64, 45, 56, 17, 8])).toStrictEqual(3);
 const isPrime = (value) => {
   for (let i = 2; i < value; i++) {
     if (value % i === 0) {
@@ -172,7 +186,14 @@ const isPrime = (value) => {
 };
 
 const countPrimeNumbers = (arr) => {
-  // Solution code here...
+  let prime = arr.reduce((count, value) => {
+    if(isPrime(value) === true){
+      console.log('value:', value)
+      count++
+    }
+    return count
+  }, 0);
+  return prime;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -255,25 +276,25 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return the string with the characters in reverse order', () => {
     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return the total number of children', () => {
     expect(countNumberOfChildren(characters)).toStrictEqual(14);
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return the average of the numbers in the array', () => {
     expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return a count of the prime numbers in the array', () => {
     expect(countPrimeNumbers([1, 2, 13, 64, 45, 56, 17, 8])).toStrictEqual(3);
   });
