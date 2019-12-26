@@ -25,12 +25,11 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  let result = []
-  arr.forEach(element => {
-    if (element.includes(':)'))
-    result.push(element);
+  // let result = []
+  return arr.forEach(element => {
+    element.includes(':)');
   })
-  return result;
+  // return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -73,19 +72,7 @@ Write a function named allHappy that takes in an array of strings and returns a 
 const allHappy = (arr) => {
   let result = []
   arr.forEach(element => {
-    if (element.includes(':)'))
-    result.push(element);
-    else{
-      return false;
-    }
-  })
-  console.log(result)
-  if (result.length > 0){
-    return true;
-  }
-  else {
-    return false;
-  }
+    
 };
 
 /* ------------------------------------------------------------------------------------------------
