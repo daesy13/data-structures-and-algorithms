@@ -25,11 +25,13 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  // let result = []
-  return arr.forEach(element => {
-    element.includes(':)');
-  })
-  // return result;
+  let result = [];
+  arr.filter(element => {
+    if (element.includes(':)') === true){
+      result.push(element);
+    }
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -70,9 +72,17 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  let result = []
-  arr.forEach(element => {
-    
+  let result = [];
+  arr.filter(element => {
+    result.push(element.includes(':)'));
+  });
+  let answer = result.reduce((bool, elem) => {
+    if (elem === false){
+      bool = false;
+    }
+    return bool;
+  }, true)
+  return answer; 
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,7 +92,12 @@ Write a function named findAnything that takes in an array of strings, along wit
 ------------------------------------------------------------------------------------------------ */
 
 const findAnything = (arr, target) => {
-  // Solution code here...
+  let result = arr.filter(elem => {
+    if (elem.includes(target)){
+      return elem;
+    }
+  })
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -92,7 +107,16 @@ Write a function named findEvery that takes in an array of strings, along with a
 ------------------------------------------------------------------------------------------------ */
 
 const findEvery = (arr, target) => {
-  // Solution code here...
+  let results = [];
+  arr.forEach(element => {
+    results.push(element.includes(target))
+  })
+  if(results.includes(false)){
+    return false;
+  }
+  else{
+    return true;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -108,7 +132,18 @@ For example, [['Brook Testing', 'Actual Person'], ['Human Person', 'Brook again'
 ------------------------------------------------------------------------------------------------ */
 
 const unenrollBrook = (arr) => {
-  // Solution code here...
+  let result = [];
+  let newArr = [];
+  arr.forEach((element) => {
+    newArr = []
+    element.forEach(value => {
+      if (!value.includes('Brook')){
+        newArr.push(value);
+      } 
+    });
+    result.push(newArr)
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -210,7 +245,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should find all the strings that contain a given string', () => {
     const words = ['things', 'apple (:)', ':)banana', 'missing that thing', 'cant:)aloupe'];
 
@@ -219,7 +254,7 @@ xdescribe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should determine whether all the strings contain a given string', () => {
     const words = ['things', 'apple pie (:)', ':)banana pie', 'missing that thing', 'cant:)aloupe is tasty'];
 
@@ -229,7 +264,7 @@ xdescribe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should remove Brook from all courses', () => {
     const roster = [
       ['Michelle', 'Allie', 'Brook TESTING'],
