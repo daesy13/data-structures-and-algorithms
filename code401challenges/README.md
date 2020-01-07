@@ -10,4 +10,4 @@ The challenge was to implemented into Java. Java is a new language for me. I fou
 We decide to use a loop. Because it was the most familiar way to do reverse. Time complexity is O(n^2).
 
 ## Solution
-![lab1whiteboard]('../assets/ArrayReverse.jpg')
+![lab1whiteboard](assets/ArrayReverse.jpg)
