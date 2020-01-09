@@ -1,9 +1,7 @@
 package code401challenges;
 
-import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
 
 public class BinarySearchTest {
     @Test public void binarySearchTest() {
