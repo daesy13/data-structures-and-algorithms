@@ -2,6 +2,8 @@
 
 # 401 CODE CHALLENGES
 
+<!-- []CREATE A TABLE OF CONTEXT FOR ALL THE CHALLENGES -->
+
 # Challenge Summary
 Using map to find target number in an array using Java.
 
