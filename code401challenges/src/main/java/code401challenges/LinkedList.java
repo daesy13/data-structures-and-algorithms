@@ -6,7 +6,7 @@ public class LinkedList {
 
     public Node head;
 
-    public LinkedList() {};
+    public LinkedList() {}
 
     static class Node {
         public Node next;
@@ -56,5 +56,35 @@ public class LinkedList {
         return resultString.toString();
     }
 
+    // CODE CHALLENGE 6
+
+    public void append(int val) {
+        Node newNode = new Node(val);
+        Node current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+    }
+
+    public void insertBefore(int target, int val) {
+        Node newNode = new Node(val);
+        Node current = head;
+        while (current.next.value != target) {
+            current = current.next;
+        }
+        newNode.next = current.next;
+        current.next = newNode;
+    }
+
+    public void insertAfter(int target, int val) {
+        Node newNode = new Node(val);
+        Node current = head;
+        while (current.value != target) {
+            current = current.next;
+        }
+        newNode.next = current.next;
+        current.next = newNode;
+    }
 
 }

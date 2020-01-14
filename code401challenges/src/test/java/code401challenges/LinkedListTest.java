@@ -17,14 +17,6 @@ public class LinkedListTest {
         assertFalse(expected.includes(81));
     }
 
-//    @Test public void findHeadTest(){
-//        LinkedList expected = new LinkedList();
-//        expected.insert(70);
-//        expected.insert(71);
-//        expected.insert(72);
-//        assertEquals(expected.head.value(72));
-//    }
-
     @Test public void testStringLinkedList() {
         LinkedList actual = new LinkedList();
         actual.insert(20);
@@ -32,7 +24,17 @@ public class LinkedListTest {
         actual.insert(40);
 
         String expected = "{40} -> {30} -> {20} -> NULL";
-        assertTrue(expected.equals(expected.toString()));
+        assertTrue(expected.equals(expected));
     }
+
+    @Test public void testAppend(){
+        LinkedList actual = new LinkedList();
+        actual.append(1);
+        actual.append(3);
+        actual.append(2);
+        String expected = "{1} -> {3} -> {2}-> {5} -> NULL";
+        assertEquals(expected, actual.toString());
+    }
+
 
 }
