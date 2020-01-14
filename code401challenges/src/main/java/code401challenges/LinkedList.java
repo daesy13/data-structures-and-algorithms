@@ -1,34 +1,60 @@
 package code401challenges;
 
-public class LinkedList<IntNode> {
-    public static void main(String[] args) {
-        System.out.println("Main method is working!");
-    }
-// Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-// Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
-// Define a method called insert which takes any value as an argument and adds a new node with that value to the head
-// of the list with an O(1) Time performance.
-// Define a method called includes which takes any value as an argument and returns a boolean result depending on
-// whether that value exists as a Node’s value somewhere within the list.
-// Define a method called toString (or __str__ in Python) which takes in no arguments and returns a string representing
-// all the values in the Linked List, formatted as:
-// "{ a } -> { b } -> { c } -> NULL"
-// Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a
-// default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went
-// wrong in calling the methods you wrote for this lab.
-// Be sure to follow your language/frameworks standard naming conventions
-// (e.g. C# uses PascalCasing for all method and class names).
-    public int data;
+import java.util.StringJoiner;
 
-    public IntNode next;
+public class LinkedList {
 
-    public void IntNode(int data, IntNode next){
-        this.data = data;
-        this.next = next;
+    public Node head;
+
+    public LinkedList() {};
+
+    static class Node {
+        public Node next;
+        public int value;
+
+        public Node(int val) {
+            this.value = val;
+            this.next = null;
+        }
     }
 
-    public String stringNode(){
-        return data + "";
+    public void insert (int val){
+        if (this.head == null){
+            this.head = new Node(val);
+        }
+        else{
+            Node nextNode = new Node(val);
+            nextNode.next = head;
+            head = nextNode;
+        }
     }
+
+    public boolean includes (int val){
+        Node current = head;
+        while (current != null){
+            if (current.value == val){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    public String toString(int val){
+        StringJoiner resultString = new StringJoiner("}{","{","}");
+        Node current = head;
+        while (current != null){
+            resultString.add(toString(current.value));
+            current = current.next;
+            if (current == null){
+                resultString.add(" -> NULL");
+            }
+            else{
+                resultString.add(" -> ");
+            }
+        }
+        return resultString.toString();
+    }
+
 
 }
