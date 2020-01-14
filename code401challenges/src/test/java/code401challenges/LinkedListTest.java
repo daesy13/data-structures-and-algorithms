@@ -32,9 +32,28 @@ public class LinkedListTest {
         actual.append(1);
         actual.append(3);
         actual.append(2);
-        String expected = "{1} -> {3} -> {2}-> {5} -> NULL";
+        String expected = "{1} -> {3} -> {2} -> {5} -> NULL";
         assertEquals(expected, actual.toString());
     }
 
+    @Test public void testInsertBefore(){
+        LinkedList actual = new LinkedList();
+        actual.append(1);
+        actual.append(3);
+        actual.append(2);
+        actual.insertBefore(3,5);
+        String expected = "{1} -> {5} -> {3} -> {2} -> NULL";
+        assertEquals(expected, actual.toString());
+    }
+
+    @Test public void testInsertAfter(){
+        LinkedList actual = new LinkedList();
+        actual.append(1);
+        actual.append(3);
+        actual.append(2);
+        actual.insertAfter(3,5);
+        String expected = "{1} -> {3} -> {5} -> {2} -> NULL";
+        assertEquals(expected, actual.toString());
+    }
 
 }
