@@ -87,4 +87,24 @@ public class LinkedList {
         current.next = newNode;
     }
 
+    // CODE CHALLENGE 7
+
+    public int kthFromEnd(int k){
+        Node current = this.head;
+        int llLength = 1;
+        while (current.next != null){
+            llLength++;
+        }
+        int newLength = llLength - k;
+        int counter = 0;
+        current = this.head;
+        while (current != null){
+            if (newLength == counter){
+                return current.value;
+            }
+            current = current.next;
+            counter++;
+        }
+        throw new IllegalArgumentException("Sorry, Not Found Value");
+    }
 }
