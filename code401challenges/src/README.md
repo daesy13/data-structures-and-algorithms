@@ -23,3 +23,20 @@ if stops it will stops at target and proceed to add new node after the target.</
 
 ## Solution
 ![challenge6](../src/assets/challenge6.jpg)
+
+# CODE CHALLENGE 7<a name="challenge 7"></a>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/LinkedList.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/LinkedListTest.java)</br></br>
+# Challenge Summary
+Creating a methods to insert a index location starting from the end of the LinkedList.</br>
+
+## Challenge Description
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.</br></br>
+
+## Approach & Efficiency
+Do a while loop to count the length of the linked list. Once found the lenght of my linked list. Subtract the length of the linked list with the k value to find the k value. Which it will count the length minus k. After that do a while loop until it stops to the new length and will return the value in k.</br>
+
+**Big O** is O(n)
+
+## Solution
+<!-- ![challenge7](../src/assets/challenge7.jpg) -->
