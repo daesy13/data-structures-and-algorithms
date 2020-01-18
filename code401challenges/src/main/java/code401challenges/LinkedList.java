@@ -116,51 +116,17 @@ public class LinkedList {
 
     // CODE CHALLENGE 8
     public static LinkedList mergeLists(LinkedList one, LinkedList two) {
-        if(one.head == null){
-            return two;
-        } else if(two.head == null) {
-            return one;
-        }
+        mergeList(one.head, two.head);
+        return one;
     }
-//        Node oneCurrent = one.head;
-//        Node twoCurrent = two.head;
-//        int oneLength = 1;
-//        int twoLength = 1;
-//        while (oneCurrent.next != null){
-//            oneLength++;
-//        }
-//        while (twoCurrent.next != null){
-//            twoLength++;
-//        }
-//
-//        int bigSize;
-//        int smallSize;
-//
-//        LinkedList result = new LinkedList();
-//        LinkedList big, small;
-//
-//        while (one != null && two != null) {
-//            if (oneLength < twoLength) {
-//                big = two;
-//                bigSize = twoLength;
-//            } else {
-//                small = one;
-//                smallSize = oneLength;
-//            }
-//            if (oneLength < twoLength) {
-//                big = one;
-//                bigSize = oneLength;
-//            } else {
-//                small = two;
-//                smallSize = twoLength;
-//            }
-//        }
-//
-//        for (int i = 0; i< bigSize; i++) {
-//            result.append(big.head.value);
-//            two.head = two.head.next;
-//
-//        }
-//    }
-
+    // https://github.com/RomellPineda/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java
+    // went over this with my tutor Evan Slaton
+    private static void mergeList(Node current1, Node current2) {
+        if (current1 == null || current2 == null) {
+            return;
+        }
+        Node runner = current1.next;
+        current1.next = current2;
+        mergeList(current2, runner);
+    }
 }
