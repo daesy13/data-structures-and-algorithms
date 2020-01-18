@@ -3,33 +3,29 @@ package code401challenges;
 import java.util.StringJoiner;
 
 public class LinkedList {
-
+    // this is an instance variable
     public Node head;
 
-    public LinkedList() {}
-
-    static class Node {
-        public Node next;
-        public int value;
-
-        public Node(int val) {
-            this.value = val;
-            this.next = null;
-        }
+    // this is a constructor
+    public LinkedList() {
+        head = null;
     }
 
-    public void insert (int val){
-        if (this.head == null){
-            this.head = new Node(val);
+    // Puts a new node at the beginning
+    // "this" refers to the instance
+    // all the purple words are referring to an instance variable
+    public void insert(int val){
+        if (head == null){
+            head = new Node(val);
         }
         else{
-            Node nextNode = new Node(val);
-            nextNode.next = head;
-            head = nextNode;
+            Node newHead = new Node(val);
+            newHead.next = head;
+            head = newHead;
         }
     }
 
-    public boolean includes (int val){
+    public boolean includes(int val){
         Node current = head;
         while (current != null){
             if (current.value == val){
@@ -40,6 +36,7 @@ public class LinkedList {
         return false;
     }
 
+    // This is a Method: is a function that lives inside of an object
     public String toString(int val){
         StringJoiner resultString = new StringJoiner("}{","{","}");
         Node current = head;
@@ -56,8 +53,8 @@ public class LinkedList {
         return resultString.toString();
     }
 
-    // CODE CHALLENGE 6
 
+    // CODE CHALLENGE 6
     public void append(int val) {
         Node newNode = new Node(val);
         Node current = head;
@@ -90,65 +87,80 @@ public class LinkedList {
     // CODE CHALLENGE 7
 
     public int kthFromEnd(int k){
-        Node current = this.head;
-        int llLength = 1;
-        while (current.next != null){
-            llLength++;
+        int llLength = getLength();
+        if(k > llLength) {
+            throw new IllegalArgumentException("K cannot be larger than the LinkedList length");
         }
         int newLength = llLength - k;
-        int counter = 0;
-        current = this.head;
-        while (current != null){
-            if (newLength == counter){
-                return current.value;
-            }
+//        int counter = 0;
+        Node current = head;
+        for (int i = 0; i < newLength; i++){
             current = current.next;
-            counter++;
         }
-        throw new IllegalArgumentException("Sorry, Not Found Value");
+//        while(newLength != counter){
+//            current = current.next;
+//            counter++;
+//        }
+        return current.value;
+    }
+
+    private int getLength(){
+        Node current = head;
+        int llLength = 0;
+        while (current != null){
+            llLength++;
+            current = current.next;
+        }
+        return llLength;
     }
 
     // CODE CHALLENGE 8
     public static LinkedList mergeLists(LinkedList one, LinkedList two) {
-        Node oneCurrent = one.head;
-        Node twoCurrent = two.head;
-        int oneLength = 1;
-        int twoLength = 1;
-        while (oneCurrent.next != null){
-            oneLength++;
-        }
-        while (twoCurrent.next != null){
-            twoLength++;
-        }
-
-        int bigSize;
-        int smallSize;
-
-        LinkedList result = new LinkedList();
-        LinkedList big, small;
-
-        while (one != null && two != null) {
-            if (oneLength < twoLength) {
-                big = two;
-                bigSize = twoLength;
-            } else {
-                small = one;
-                smallSize = oneLength;
-            }
-            if (oneLength < twoLength) {
-                big = one;
-                bigSize = oneLength;
-            } else {
-                small = two;
-                smallSize = twoLength;
-            }
-        }
-
-        for (int i = 0; i< bigSize; i++) {
-            result.append(big.head.value);
-            two.head = two.head.next;
-
+        if(one.head == null){
+            return two;
+        } else if(two.head == null) {
+            return one;
         }
     }
+//        Node oneCurrent = one.head;
+//        Node twoCurrent = two.head;
+//        int oneLength = 1;
+//        int twoLength = 1;
+//        while (oneCurrent.next != null){
+//            oneLength++;
+//        }
+//        while (twoCurrent.next != null){
+//            twoLength++;
+//        }
+//
+//        int bigSize;
+//        int smallSize;
+//
+//        LinkedList result = new LinkedList();
+//        LinkedList big, small;
+//
+//        while (one != null && two != null) {
+//            if (oneLength < twoLength) {
+//                big = two;
+//                bigSize = twoLength;
+//            } else {
+//                small = one;
+//                smallSize = oneLength;
+//            }
+//            if (oneLength < twoLength) {
+//                big = one;
+//                bigSize = oneLength;
+//            } else {
+//                small = two;
+//                smallSize = twoLength;
+//            }
+//        }
+//
+//        for (int i = 0; i< bigSize; i++) {
+//            result.append(big.head.value);
+//            two.head = two.head.next;
+//
+//        }
+//    }
 
 }
