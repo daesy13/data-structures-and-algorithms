@@ -3,6 +3,11 @@ package code401challenges;
 import java.util.StringJoiner;
 
 public class LinkedList {
+    public static void main(String[] args){
+        LinkedList t = new LinkedList();
+        t.append(5);
+        System.out.println(t);
+    }
     // this is an instance variable
     public Node head;
 
@@ -36,19 +41,21 @@ public class LinkedList {
         return false;
     }
 
+    // Resource: Nick's video minute=01:24:11 frontRow = https://frontrowviews.com/Home/Event/Play/5e1ceb11eee6d9204c77f8dc
     // This is a Method: is a function that lives inside of an object
-    public String toString(int val){
-        StringJoiner resultString = new StringJoiner("}{","{","}");
+    public String toString(){
+        StringJoiner resultString = new StringJoiner("","{","");
         Node current = head;
         while (current != null){
-            resultString.add(toString(current.value));
-            current = current.next;
-            if (current == null){
-                resultString.add(" -> NULL");
+            int data = current.value;
+            resultString.add(Integer.toString(data));
+            if (current.next == null){
+                resultString.add("} -> NULL");
             }
             else{
-                resultString.add(" -> ");
+                resultString.add("} -> {");
             }
+            current = current.next;
         }
         return resultString.toString();
     }
@@ -92,6 +99,7 @@ public class LinkedList {
             throw new IllegalArgumentException("K cannot be larger than the LinkedList length");
         }
         int newLength = llLength - k;
+        System.out.println("newLength = " + newLength);
 //        int counter = 0;
         Node current = head;
         for (int i = 0; i < newLength; i++){
@@ -106,7 +114,7 @@ public class LinkedList {
 
     private int getLength(){
         Node current = head;
-        int llLength = 0;
+        int llLength = -1;
         while (current != null){
             llLength++;
             current = current.next;
