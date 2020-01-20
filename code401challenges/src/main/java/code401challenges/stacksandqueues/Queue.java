@@ -24,7 +24,6 @@ public class Queue {
     //Define a method called enqueue which takes any value as
     // an argument and adds a new node with that value to the
     // back of the queue with an O(1) Time performance.
-
     public void enqueue(int value){
         Node runner =  new Node(value);
         if(isEmpty()){
