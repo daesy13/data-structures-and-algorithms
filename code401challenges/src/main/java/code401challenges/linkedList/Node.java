@@ -1,4 +1,4 @@
-package code401challenges;
+package code401challenges.linkedList;
 
 public class Node {
     // this are instance variables
