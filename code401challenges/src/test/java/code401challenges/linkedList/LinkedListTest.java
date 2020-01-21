@@ -1,13 +1,12 @@
 package code401challenges.linkedList;
 
-import code401challenges.linkedList.LinkedList;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LinkedListTest {
 
     @Test public void insertLLTest(){
-        LinkedList expected = new LinkedList();
+        Stack expected = new Stack();
         expected.insert(70);
         expected.insert(71);
         expected.insert(72);
@@ -19,7 +18,7 @@ public class LinkedListTest {
     }
 
     @Test public void testStringLinkedList() {
-        LinkedList actual = new LinkedList();
+        Stack actual = new Stack();
         actual.insert(20);
         actual.insert(30);
         actual.insert(40);
@@ -29,7 +28,7 @@ public class LinkedListTest {
     }
 
     @Test public void testAppend(){
-        LinkedList actual = new LinkedList();
+        Stack actual = new Stack();
         actual.insert(2);
         actual.insert(3);
         actual.insert(1);
@@ -39,14 +38,14 @@ public class LinkedListTest {
     }
 
     @Test public void testAppendOne(){
-        LinkedList actual = new LinkedList();
+        Stack actual = new Stack();
         actual.append(5);
         String expected = "{5} -> NULL";
         assertTrue(expected.equals(actual.toString()));
     }
 
     @Test public void testInsertBefore(){
-        LinkedList actual = new LinkedList();
+        Stack actual = new Stack();
         actual.insert(2);
         actual.insert(3);
         actual.insert(1);
@@ -56,7 +55,7 @@ public class LinkedListTest {
     }
 
     @Test public void testInsertAfter(){
-        LinkedList actual = new LinkedList();
+        Stack actual = new Stack();
         actual.insert(2);
         actual.insert(3);
         actual.insert(1);
@@ -66,7 +65,7 @@ public class LinkedListTest {
     }
 
     @Test public void testKFromEnd(){
-        LinkedList actual = new LinkedList();
+        Stack actual = new Stack();
         actual.insert(2);
         actual.insert(8);
         actual.insert(3);
