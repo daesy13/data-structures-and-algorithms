@@ -1,7 +1,5 @@
 package code401challenges.stacksandqueues;
 
-import code401challenges.linkedList.LinkedList;
-
 import java.util.EmptyStackException;
 
 public class Stack {
