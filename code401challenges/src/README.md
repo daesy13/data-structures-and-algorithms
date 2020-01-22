@@ -55,8 +55,8 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 **Big O** is O(n)
 
 ## Solution
-<!-- ![challenge11.1](../src/assets/challenge11-1.jpg) -->
-<!-- ![challenge11.2](../src/assets/challenge11-2.jpg) -->
+![challenge11.1](../src/assets/challenge11-1.jpg)
+![challenge11.2](../src/assets/challenge11-2.jpg)
 
 
 
