@@ -11,16 +11,6 @@ public class PseudoQueue {
         dequeueStack = new Stack();
     }
 
-//    public static void main(String[] args) {
-//        System.out.println("Main method is working!");
-//        Stack p = new Stack();
-//        p.push(1);
-//        p.push(2);
-//        p.push(3);
-//        String str = p.toString();
-//        System.out.println(str.toString());
-//    }
-
     public void enqueue(int value){
         while(!dequeueStack.isEmpty()) {
             enqueueStack.push(dequeueStack.pop());
