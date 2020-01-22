@@ -2,11 +2,11 @@ package code401challenges.stacksandqueues;
 
 import java.util.NoSuchElementException;
 
-public class Queue {
+public class Queue<E> {
     // This object should be aware of a default empty value assigned to front when the queue is created.
 
-    public Node front;
-    public Node back;
+    public Node<E> front;
+    public Node<E> back;
 
     // this is a constructor
     public Queue(){
@@ -24,8 +24,8 @@ public class Queue {
     //Define a method called enqueue which takes any value as
     // an argument and adds a new node with that value to the
     // back of the queue with an O(1) Time performance.
-    public void enqueue(int value){
-        Node runner =  new Node(value);
+    public void enqueue(E value){
+        Node<E> runner =  new Node<>(value);
         if(isEmpty()){
             front = back = runner;
         }
@@ -42,17 +42,17 @@ public class Queue {
     //Define a method called dequeue that does not take any
     //argument, removes the node from the front of the
     // queue, and returns the node’s value.
-    public int dequeue(){
+    public E dequeue(){
         if(isEmpty()){
             throw new NoSuchElementException("sorry This queue is empty");
         }
         else if(front == back){
-            Node runner = front;
+            Node<E> runner = front;
             front = back = null;
             return runner.value;
         }
         else {
-            Node current = front;
+            Node<E> current = front;
             front = front.next;
             return current.value;
         }
@@ -62,7 +62,7 @@ public class Queue {
     //argument and returns the value of the node located
     // in the front of the queue, without removing it from
     // the queue.
-    public int peek(){
+    public E peek(){
         if(isEmpty()){
             throw new NoSuchElementException("sorry Nothing to peek");
         }

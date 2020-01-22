@@ -60,11 +60,10 @@ public class Stack {
         return resultString.toString();
     }
 
-
-    // CODE CHALLENGE 6
     public void append(int val) {
         Node newNode = new Node(val);
         Node current = head;
+
         while (current.next != null) {
             current = current.next;
         }

@@ -1,17 +1,17 @@
 package code401challenges.stacksandqueues;
 // resource https://coderbyte.com/algorithm/implement-queue-using-two-stacks
 
-public class PseudoQueue {
-    public Stack enqueueStack;
-    public Stack dequeueStack;
+public class PseudoQueue<E> {
+    public Stack<E> enqueueStack;
+    public Stack<E> dequeueStack;
 
 
     public PseudoQueue(){
-        enqueueStack = new Stack();
-        dequeueStack = new Stack();
+        enqueueStack = new Stack<>();
+        dequeueStack = new Stack<>();
     }
 
-    public void enqueue(int value){
+    public void enqueue(E value){
         while(!dequeueStack.isEmpty()) {
             enqueueStack.push(dequeueStack.pop());
         }
@@ -19,7 +19,7 @@ public class PseudoQueue {
         enqueueStack.push(value);
     }
 
-    public int dequeue(){
+    public E dequeue(){
         // while "stackOne" is not empty
         while(!enqueueStack.isEmpty()){
             // push values into new "stackTwo", this will push items to the

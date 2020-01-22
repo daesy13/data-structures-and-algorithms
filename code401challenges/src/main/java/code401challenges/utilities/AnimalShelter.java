@@ -1,19 +1,33 @@
 package code401challenges.utilities;
 
-import code401challenges.stacksandqueues.Stack;
+import code401challenges.stacksandqueues.Queue;
 
 public class AnimalShelter {
-    public Stack catsStack;
-    public Stack dogsStack;
+    public Queue<Cat> catQueue;
+    public Queue<Dog> dogQueue;
 
     public AnimalShelter() {
-        catsStack = new Stack();
-        dogsStack = new Stack();
+        catQueue = new Queue<>();
+        dogQueue = new Queue<>();
     }
 
-    public void enqueue(String animal){
-       
+    // this is overload
+    public void enqueue(Dog dog){
+        dogQueue.enqueue(dog);
     }
 
+    public void enqueue(Cat cat){
+        catQueue.enqueue(cat);
+    }
+
+    public Animal dequeue(String preference){
+        if (preference.toLowerCase().equals("cat")){
+            return catQueue.dequeue();
+        }
+        else if (preference.toLowerCase().equals("dog")){
+            return dogQueue.dequeue();
+        }
+        throw new IllegalArgumentException("should be a cat or dog");
+    }
 }
 
