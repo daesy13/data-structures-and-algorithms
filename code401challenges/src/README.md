@@ -40,3 +40,24 @@ Do a while loop to count the length of the linked list. Once found the lenght of
 
 ## Solution
 <!-- ![challenge7](../src/assets/challenge7.jpg) -->
+
+# CODE CHALLENGE 12<a name="challenge 12"></a>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/LinkedList.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/LinkedListTest.java)</br></br>
+# Challenge Summary
+Creating two Queue methods one enqueue to add new objects and another dequeue to delete the first item that enter previously .</br>
+
+## Challenge Description
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.</br>
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.</br>
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null..</br></br>
+
+**Big O** is O(n)
+
+## Solution
+<!-- ![challenge11.1](../src/assets/challenge11-1.jpg) -->
+<!-- ![challenge11.2](../src/assets/challenge11-2.jpg) -->
+
+
+

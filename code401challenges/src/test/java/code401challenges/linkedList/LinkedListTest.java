@@ -37,13 +37,6 @@ public class LinkedListTest {
         assertTrue(expected.equals(actual.toString()));
     }
 
-    @Test public void testAppendOne(){
-        Stack actual = new Stack();
-        actual.append(5);
-        String expected = "{5} -> NULL";
-        assertTrue(expected.equals(actual.toString()));
-    }
-
     @Test public void testInsertBefore(){
         Stack actual = new Stack();
         actual.insert(2);

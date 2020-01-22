@@ -1,12 +1,12 @@
 package code401challenges.stacksandqueues;
 
-public class Node {
+public class Node <E>{
     // this are instance variables
-    public Node next;
-    public int value;
+    public Node<E> next;
+    public E value;
 
     // constructor
-    public Node(int val) {
+    public Node(E val) {
         this.value = val;
         this.next = null;
     }
