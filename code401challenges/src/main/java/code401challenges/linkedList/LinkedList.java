@@ -2,9 +2,9 @@ package code401challenges.linkedList;
 
 import java.util.StringJoiner;
 
-public class Stack {
+public class LinkedList {
     public static void main(String[] args){
-        Stack t = new Stack();
+        LinkedList t = new LinkedList();
         t.append(5);
         System.out.println(t);
     }
@@ -12,7 +12,7 @@ public class Stack {
     public Node head;
 
     // this is a constructor
-    public Stack() {
+    public LinkedList() {
         head = null;
     }
 
@@ -122,7 +122,7 @@ public class Stack {
     }
 
     // CODE CHALLENGE 8
-    public static Stack mergeLists(Stack one, Stack two) {
+    public static LinkedList mergeLists(LinkedList one, LinkedList two) {
         mergeList(one.head, two.head);
         return one;
     }
