@@ -1,6 +1,6 @@
 # CODE CHALLENGE 6<a name="challenge 6"></a>
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/LinkedList.java)</br>
-[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/LinkedListTest.java)</br></br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/linkedList)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
 # Challenge Summary
 Creating a methods to insert new linkedlist values, as well as adding before the target and after the target value.</br>
 
