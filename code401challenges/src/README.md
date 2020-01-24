@@ -1,7 +1,7 @@
-# DATA STRUCTURE
+### DATA STRUCTURE
 [CODE CHALLENGE 6](#challenge-6)</br>
 [CODE CHALLENGE 7](#challenge-7)</br>
-[CODE CHALLENGE 12](#challenge-12)</br>
+[CODE CHALLENGE 12](#challenge-12)</br></br></br>
 
 
 <a name="challenge-6">CODE CHALLENGE 6</a></br>
