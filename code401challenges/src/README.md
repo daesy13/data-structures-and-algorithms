@@ -5,7 +5,7 @@
 
 
 <a name="challenge-6">CODE CHALLENGE 6</a></br></br>
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/linkedList)</br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
 # Challenge Summary
 Creating a methods to insert new linkedlist values, as well as adding before the target and after the target value.</br>
@@ -31,8 +31,8 @@ if stops it will stops at target and proceed to add new node after the target.</
 ![challenge6](../src/assets/challenge6.jpg)</br></br>
 
 <a name="challenge-7">CODE CHALLENGE 7</a></br></br>
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/LinkedList.java)</br>
-[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/LinkedListTest.java)</br></br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
 # Challenge Summary
 Creating a methods to insert a index location starting from the end of the LinkedList.</br>
 
