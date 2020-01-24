@@ -4,7 +4,7 @@
 [CODE CHALLENGE 12](#challenge-12)</br></br></br>
 
 
-<a name="challenge-6">CODE CHALLENGE 6</a></br>
+<a name="challenge-6">CODE CHALLENGE 6</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/linkedList)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
 # Challenge Summary
@@ -28,9 +28,9 @@ if stops it will stops at target and proceed to add new node after the target.</
 **Big O** is O(n)
 
 ## Solution
-![challenge6](../src/assets/challenge6.jpg)
+![challenge6](../src/assets/challenge6.jpg)</br></br>
 
-<a name="challenge-7">CODE CHALLENGE 7</a></br>
+<a name="challenge-7">CODE CHALLENGE 7</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/LinkedList.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/LinkedListTest.java)</br></br>
 # Challenge Summary
@@ -45,9 +45,9 @@ Do a while loop to count the length of the linked list. Once found the lenght of
 **Big O** is O(n)
 
 ## Solution
-![challenge7](../src/assets/challenge7.jpg)
+![challenge7](../src/assets/challenge7.jpg)</br></br>
 
-<a name="challenge-12">CODE CHALLENGE 12</a></br>
+<a name="challenge-12">CODE CHALLENGE 12</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/utilities)</br></br>
 # Challenge Summary
 Creating two Queue methods one enqueue to add new objects and another dequeue to delete the first item that enter previously .</br>
@@ -62,7 +62,7 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 
 ## Solution
 ![challenge11.1](../src/assets/challenge11-1.jpg)
-![challenge11.2](../src/assets/challenge11-2.jpg)
+![challenge11.2](../src/assets/challenge11-2.jpg)</br></br>
 
 
 
