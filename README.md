@@ -2,7 +2,10 @@
 
 # 401 CODE CHALLENGES
 
-<!-- []CREATE A TABLE OF CONTEXT FOR ALL THE CHALLENGES -->
+[Code Challenge 01]()</br>
+[Code Challenge 06 - Linked List Insertions.](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src)</br>
+[Code Challenge 07 - k-th Value from the End of a Linked List](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src)</br>
+
 
 # Challenge Summary
 Using map to find target number in an array using Java.
