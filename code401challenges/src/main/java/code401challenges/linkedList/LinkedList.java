@@ -98,7 +98,7 @@ public class LinkedList {
             throw new IllegalArgumentException("K cannot be larger than the LinkedList length");
         }
         int newLength = llLength - k;
-        System.out.println("newLength = " + newLength);
+//        System.out.println("newLength = " + newLength);
 //        int counter = 0;
         Node current = head;
         for (int i = 0; i < newLength; i++){

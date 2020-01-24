@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class LinkedListTest {
 
     @Test public void insertLLTest(){
-        Stack expected = new Stack();
+        LinkedList expected = new LinkedList();
         expected.insert(70);
         expected.insert(71);
         expected.insert(72);
@@ -18,7 +18,7 @@ public class LinkedListTest {
     }
 
     @Test public void testStringLinkedList() {
-        Stack actual = new Stack();
+        LinkedList actual = new LinkedList();
         actual.insert(20);
         actual.insert(30);
         actual.insert(40);
@@ -28,7 +28,7 @@ public class LinkedListTest {
     }
 
     @Test public void testAppend(){
-        Stack actual = new Stack();
+        LinkedList actual = new LinkedList();
         actual.insert(2);
         actual.insert(3);
         actual.insert(1);
@@ -38,7 +38,7 @@ public class LinkedListTest {
     }
 
     @Test public void testInsertBefore(){
-        Stack actual = new Stack();
+        LinkedList actual = new LinkedList();
         actual.insert(2);
         actual.insert(3);
         actual.insert(1);
@@ -48,7 +48,7 @@ public class LinkedListTest {
     }
 
     @Test public void testInsertAfter(){
-        Stack actual = new Stack();
+        LinkedList actual = new LinkedList();
         actual.insert(2);
         actual.insert(3);
         actual.insert(1);
@@ -58,15 +58,19 @@ public class LinkedListTest {
     }
 
     @Test public void testKFromEnd(){
-        Stack actual = new Stack();
+        LinkedList actual = new LinkedList();
         actual.insert(2);
         actual.insert(8);
         actual.insert(3);
         actual.insert(1);
-        int pending = actual.kthFromEnd(0);
-        int expected = 2;
-        assertEquals(expected, 2);
 
+        int pendingLastValue = actual.kthFromEnd(0);
+        int expectedLastValue = 2;
+        assertEquals(expectedLastValue, pendingLastValue);
+
+        int pendingSecondFromEnd = actual.kthFromEnd(2);
+        int expectedSecondFromEnd = 3;
+        assertEquals(expectedSecondFromEnd, pendingSecondFromEnd);
     }
 
 }
