@@ -45,11 +45,8 @@ Do a while loop to count the length of the linked list. Once found the lenght of
 **Big O** is O(n)
 
 ## Solution
-<<<<<<< HEAD
-![challenge7](../src/assets/challenge7.jpg)
-=======
 ![challenge7](../src/assets/challenge7.jpg)</br></br>
->>>>>>> 2808da6ff93e202d6b9b2a2d9e687426df15055f
+
 
 <a name="challenge-12">CODE CHALLENGE 12</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/utilities)</br></br>
@@ -61,7 +58,7 @@ Create a class called AnimalShelter which holds only dogs and cats. The shelter 
 Implement the following methods:
 enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.</br>
 dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null..</br></br>
-/
+
 **Big O** is O(n)
 
 ## Solution
