@@ -73,4 +73,49 @@ public class LinkedListTest {
         assertEquals(expectedSecondFromEnd, pendingSecondFromEnd);
     }
 
+    @Test public void testMergeEqualLengthLists(){
+        LinkedList actual1 = new LinkedList();
+        actual1.insert(1);
+        actual1.insert(2);
+        actual1.insert(3);
+
+        LinkedList actual2 = new LinkedList();
+        actual2.insert(5);
+        actual2.insert(9);
+        actual2.insert(4);
+
+        LinkedList actual = LinkedList.mergeLists(actual1, actual2);
+        String expected = "{3} -> {4} -> {2} -> {9} -> {1} -> {5} -> NULL";
+        assertEquals(expected, actual.toString());
+    }
+
+    @Test public void testMergeUnevenList(){
+        LinkedList actual1 = new LinkedList();
+        actual1.insert(1);
+        actual1.insert(3);
+
+        LinkedList actual2 = new LinkedList();
+        actual2.insert(5);
+        actual2.insert(9);
+        actual2.insert(4);
+
+        LinkedList actual = LinkedList.mergeLists(actual1, actual2);
+        String expected = "{3} -> {4} -> {1} -> {9} -> {5} -> NULL";
+        assertEquals(expected, actual.toString());
+    }
+
+    @Test public void testMergeEmptyList(){
+
+        LinkedList actual1 = new LinkedList();
+        actual1.insert(5);
+        actual1.insert(9);
+        actual1.insert(4);
+
+        LinkedList actual2 = new LinkedList();
+
+        LinkedList actual = LinkedList.mergeLists(actual1, actual2);
+        String expected = "{4} -> {9} -> {5} -> NULL";
+        assertEquals(expected, actual.toString());
+    }
+
 }

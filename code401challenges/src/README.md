@@ -1,12 +1,14 @@
 ### DATA STRUCTURE
 [CODE CHALLENGE 6](#challenge-6)</br>
 [CODE CHALLENGE 7](#challenge-7)</br>
+[CODE CHALLENGE 8](#challenge-8)</br>
 [CODE CHALLENGE 12](#challenge-12)</br></br></br>
 
 
 <a name="challenge-6">CODE CHALLENGE 6</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+
 # Challenge Summary
 Creating a methods to insert new linkedlist values, as well as adding before the target and after the target value.</br>
 
@@ -33,6 +35,7 @@ if stops it will stops at target and proceed to add new node after the target.</
 <a name="challenge-7">CODE CHALLENGE 7</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+
 # Challenge Summary
 Creating a methods to insert a index location starting from the end of the LinkedList.</br>
 
@@ -46,6 +49,24 @@ Do a while loop to count the length of the linked list. Once found the lenght of
 
 ## Solution
 ![challenge7](../src/assets/challenge7.jpg)</br></br>
+
+<a name="challenge-8">CODE CHALLENGE 8</a></br></br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+
+# Challenge Summary
+Creating a methods that takes two LinkedList and merge into one LinkedList.</br>
+
+## Challenge Description
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.</br></br>
+
+## Approach & Efficiency
+Create a recursion that goes to each node and assign the next to be the first node from the second linked list.</br>
+
+**Big O** is O(n)
+
+## Solution
+![challenge8](../src/assets/challenge8.jpg)</br></br>
 
 
 <a name="challenge-12">CODE CHALLENGE 12</a></br></br>

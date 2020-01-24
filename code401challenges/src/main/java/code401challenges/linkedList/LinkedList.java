@@ -123,17 +123,25 @@ public class LinkedList {
 
     // CODE CHALLENGE 8
     public static LinkedList mergeLists(LinkedList one, LinkedList two) {
+        // run the recursion which will send all into the first LinkedList
         mergeList(one.head, two.head);
+        // return first LinkedList
         return one;
     }
+
     // https://github.com/RomellPineda/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java
     // went over this with my tutor Evan Slaton
     private static void mergeList(Node current1, Node current2) {
+        // if any of the nodes is empty return whichever one has something because null will be null
         if (current1 == null || current2 == null) {
             return;
         }
+        // THIS IS THE BASE CASE FOR RECURSION:
+        // create place holder to store next position from the very first node passed as parameter
         Node runner = current1.next;
+        // assign to be the next node the first item from the 2nd node passed
         current1.next = current2;
+        // * call again the function to run it again "this is recursion" this links the two nodes into one LinkedList
         mergeList(current2, runner);
     }
 }
