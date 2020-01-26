@@ -4,7 +4,6 @@ import java.util.NoSuchElementException;
 
 public class Queue<E> {
     // This object should be aware of a default empty value assigned to front when the queue is created.
-
     public Node<E> front;
     public Node<E> back;
 
@@ -16,7 +15,6 @@ public class Queue<E> {
     //Define a method called isEmpty that does not take an
     // argument, and returns a boolean indicating whether
     // or not the queue is empty.
-
     public boolean isEmpty(){
         return front == null;
     }
