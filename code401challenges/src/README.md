@@ -3,6 +3,7 @@
 [CODE CHALLENGE 7](#challenge-7)</br>
 [CODE CHALLENGE 8](#challenge-8)</br>
 [CODE LAB 10](#lab-10)</br>
+[CODE CHALLENGE 11](#challenge-11)</br>
 [CODE CHALLENGE 12](#challenge-12)</br></br></br>
 
 
@@ -109,6 +110,33 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 ## Solution
 ![challenge11.1](../src/assets/challenge11-1.jpg)
 ![challenge11.2](../src/assets/challenge11-2.jpg)</br></br>
+
+<a name="challenge-11">challenge 11</a></br></br>
+# CODE CHALLENGE 11
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/stacksandqueues/PseudoQueue.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/stacksandqueues/PseudoQueueTest.java)</br></br>
+
+# Challenge Summary
+Create 2 methods enqueue and dequeue using Stack methods to work as a queue using the FIFO approach.</br>
+
+## Challenge Description
+Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:</br>
+
+* enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+* dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.</br></br>
+
+## Approach & Efficiency
+* Create 2 empty stacks for place holder.
+* Create method enqueue and push values into enqueue stack place holder.
+* Create method dequeue, and while the stack is not empty, add the values to the empty stack from back to first and delete them from their original stack. Which it will put the values in reverse.
+* return the pop value which will be the first item in from the original stack.
+</br>
+
+**Big O** is O(n)
+
+## Solution
+![challenge11](../src/assets/challenge11.jpg)</br></br>
 
 
 
