@@ -94,23 +94,6 @@ This object should be aware of a default empty value assigned to front when the 
 * Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
 * Be sure to follow your languages best practices for naming conventions.</br></br>
 
-<a name="challenge-12">CODE CHALLENGE 12</a></br></br>
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/utilities)</br></br>
-# Challenge Summary
-Creating two Queue methods one enqueue to add new objects and another dequeue to delete the first item that enter previously .</br>
-
-## Challenge Description
-Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.</br>
-Implement the following methods:
-enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.</br>
-dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null..</br></br>
-
-**Big O** is O(n)
-
-## Solution
-![challenge11.1](../src/assets/challenge11-1.jpg)
-![challenge11.2](../src/assets/challenge11-2.jpg)</br></br>
-
 <a name="challenge-11">challenge 11</a></br></br>
 # CODE CHALLENGE 11
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/stacksandqueues/PseudoQueue.java)</br>
@@ -136,7 +119,27 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 **Big O** is O(n)
 
 ## Solution
-![challenge11](../src/assets/challenge11.jpg)</br></br>
+![challenge11](../src/assets/challenge11)</br></br>
+
+<a name="challenge-12">challenge 12</a>
+#CODE CHALLENGE 12
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/utilities)</br></br>
+# Challenge Summary
+Creating two Queue methods one enqueue to add new objects and another dequeue to delete the first item that enter previously .</br>
+
+## Challenge Description
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.</br>
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.</br>
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null..</br></br>
+
+**Big O** is O(n)
+
+## Solution
+![challenge11.1](../src/assets/challenge11-1.jpg)
+![challenge11.2](../src/assets/challenge11-2.jpg)</br></br>
+
+
 
 
 
