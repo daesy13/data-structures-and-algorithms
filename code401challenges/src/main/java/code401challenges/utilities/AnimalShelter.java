@@ -1,6 +1,7 @@
 package code401challenges.utilities;
 
 import code401challenges.stacksandqueues.Queue;
+import org.checkerframework.checker.units.qual.A;
 
 public class AnimalShelter {
     public Queue<Cat> catQueue;
@@ -29,5 +30,6 @@ public class AnimalShelter {
         }
         throw new IllegalArgumentException("should be a cat or dog");
     }
+
 }
 
