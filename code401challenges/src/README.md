@@ -121,7 +121,7 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 ## Solution
 ![challenge11](../src/assets/challenge11)</br></br>
 
-<a name="challenge-12">challenge 12</a></br> <a href="#top">Back to top</a>
+<a name="challenge-12">challenge 12</a></br> 
 # CODE CHALLENGE 12
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/utilities)</br></br>
 # Challenge Summary
@@ -138,6 +138,7 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 ## Solution
 ![challenge11.1](../src/assets/challenge11-1.jpg)
 ![challenge11.2](../src/assets/challenge11-2.jpg)</br></br>
+<a href="#top">Back to top</a>
 
 
 
