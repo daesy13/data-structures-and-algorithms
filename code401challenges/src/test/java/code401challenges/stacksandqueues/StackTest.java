@@ -12,12 +12,12 @@ import static org.junit.Assert.*;
 //[x] Can successfully instantiate an empty stack
 
 public class StackTest<E> {
-    private Stack <E> expected;
+    private Stack <E> actual;
 
     @Test
     public void testEmpty(){
-        Stack <E> expected = new Stack<>();
-        assertEquals(expected.top, null);
+        Stack <E> actual = new Stack<>();
+        assertEquals(null, actual.top);
     }
 
     @Test
