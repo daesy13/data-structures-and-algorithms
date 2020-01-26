@@ -32,7 +32,7 @@ if stops it will stops at target and proceed to add new node after the target.</
 **Big O** is O(n)
 
 ## Solution
-![challenge6](../src/assets/challenge6.jpg)</br></br>
+![challenge6](../src/assets/challenge6.jpg)</br></br><a href="#top">Back to top</a>
 
 <a name="challenge-7">CODE CHALLENGE 7</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
@@ -50,7 +50,7 @@ Do a while loop to count the length of the linked list. Once found the lenght of
 **Big O** is O(n)
 
 ## Solution
-![challenge7](../src/assets/challenge7.jpg)</br></br>
+![challenge7](../src/assets/challenge7.jpg)</br></br><a href="#top">Back to top</a>
 
 <a name="challenge-8">CODE CHALLENGE 8</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
@@ -68,7 +68,7 @@ Create a recursion that goes to each node and assign the next to be the first no
 **Big O** is O(n)
 
 ## Solution
-![challenge8](../src/assets/challenge8.jpg)</br></br>
+![challenge8](../src/assets/challenge8.jpg)</br></br><a href="#top">Back to top</a>
 
 <a name="lab-10">LAB 10</a></br></br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/stacksandqueues)</br>
@@ -92,7 +92,7 @@ This object should be aware of a default empty value assigned to front when the 
   * Define a method called peek that does not take an argument and returns the value of the node located in the front of the queue, without removing it from the queue.
   * Define a method called isEmpty that does not take an argument, and returns a boolean indicating whether or not the queue is empty.
 * Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
-* Be sure to follow your languages best practices for naming conventions.</br></br>
+* Be sure to follow your languages best practices for naming conventions.</br></br><a href="#top">Back to top</a>
 
 <a name="challenge-11">challenge 11</a></br></br>
 # CODE CHALLENGE 11
@@ -119,7 +119,7 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 **Big O** is O(n)
 
 ## Solution
-![challenge11](../src/assets/challenge11)</br></br>
+![challenge11](../src/assets/challenge11.jpg)</br></br><a href="#top">Back to top</a>
 
 <a name="challenge-12">challenge 12</a></br> 
 # CODE CHALLENGE 12
