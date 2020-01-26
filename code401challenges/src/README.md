@@ -74,7 +74,7 @@ Create a recursion that goes to each node and assign the next to be the first no
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/test/java/code401challenges/stacksandqueues)</br></br>
 
 # Lab Summary
-Creating methods to add Nodes and delete nodes from class Stack and Queue with their respective logic.</br>
+Creating methods to add nodes and delete nodes for Stacks and Queues with their respective logic.</br>
 
 ## Lab Description
 * Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
