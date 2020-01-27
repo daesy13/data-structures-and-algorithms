@@ -147,8 +147,8 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 
 <a name="challenge-13">code challenge 13</a></br></br>
 # CODE CHALLENGE 13
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
-[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/utilities/MultiBracketValidation.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/utilities/MultiBracketValidationTest.java)</br></br>
 
 # Challenge Summary
 Creating a methods takes a string and iterates each item on the string to verify if there is matching open and close brackets.</br>
