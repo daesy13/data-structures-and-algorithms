@@ -17,6 +17,7 @@ public class MultiBracketValidation {
     //Round Brackets : ()
     //Square Brackets : []
     //Curly Brackets : {}
+    // REFERENCE: https://www.techiedelight.com/iterate-over-characters-string-java/
     public static boolean multiBracketValidation(String input){
         Stack<Character> temp = new Stack<>();
         char[] inputChar = input.toCharArray();
