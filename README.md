@@ -9,6 +9,7 @@
 [Lab 10 - Stack and Queue Implementation](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src#lab-10)</br>
 [Code Challenge 11 - Implement a Queue using two Stacks](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src#challenge-11)</br>
 [Code Challenge 12 - First-in, First out Animal Shelter](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src#challenge-12)</br>
+[Code Challenge 13 - Multi-bracket Validation](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src#challenge-13)</br>
 
 
 # Challenge Summary
