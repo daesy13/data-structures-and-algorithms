@@ -8,7 +8,8 @@
 [CODE CHALLENGE 13](#challenge-13)</br></br></br>
 
 
-<a name="challenge-6">CODE CHALLENGE 6</a></br></br>
+<a name="challenge-6">code challenge 6</a></br></br>
+# CODE CHALLENGE 6
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
 
@@ -35,7 +36,8 @@ if stops it will stops at target and proceed to add new node after the target.</
 ## Solution
 ![challenge6](../src/assets/challenge6.jpg)</br></br><a href="#top">Back to top</a>
 
-<a name="challenge-7">CODE CHALLENGE 7</a></br></br>
+<a name="challenge-7">code challenge 7</a></br></br>
+# CODE CHALLENGE 7
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
 
@@ -53,7 +55,8 @@ Do a while loop to count the length of the linked list. Once found the lenght of
 ## Solution
 ![challenge7](../src/assets/challenge7.jpg)</br></br><a href="#top">Back to top</a>
 
-<a name="challenge-8">CODE CHALLENGE 8</a></br></br>
+<a name="challenge-8">code challenge 8</a></br></br>
+# CODE CHALLENGE 8
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
 
@@ -71,7 +74,8 @@ Create a recursion that goes to each node and assign the next to be the first no
 ## Solution
 ![challenge8](../src/assets/challenge8.jpg)</br></br><a href="#top">Back to top</a>
 
-<a name="lab-10">LAB 10</a></br></br>
+<a name="lab-10">lab 10</a></br></br>
+# LAB 10
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/stacksandqueues)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/test/java/code401challenges/stacksandqueues)</br></br>
 
@@ -141,7 +145,8 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 ![challenge11.2](../src/assets/challenge11-2.jpg)</br></br>
 <a href="#top">Back to top</a>
 
-<a name="challenge-13">CODE CHALLENGE 13</a></br></br>
+<a name="challenge-13">code challenge 13</a></br></br>
+# CODE CHALLENGE 13
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
 
