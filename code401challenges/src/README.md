@@ -4,7 +4,8 @@
 [CODE CHALLENGE 8](#challenge-8)</br>
 [CODE LAB 10](#lab-10)</br>
 [CODE CHALLENGE 11](#challenge-11)</br>
-[CODE CHALLENGE 12](#challenge-12)</br></br></br>
+[CODE CHALLENGE 12](#challenge-12)</br>
+[CODE CHALLENGE 13](#challenge-13)</br></br></br>
 
 
 <a name="challenge-6">CODE CHALLENGE 6</a></br></br>
@@ -140,6 +141,28 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 ![challenge11.2](../src/assets/challenge11-2.jpg)</br></br>
 <a href="#top">Back to top</a>
 
+<a name="challenge-13">CODE CHALLENGE 13</a></br></br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+
+# Challenge Summary
+Creating a methods takes a string and iterates each item on the string to verify if there is matching open and close brackets.</br>
+
+## Challenge Description
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:</br>
+
+* Round Brackets : ```()```
+* Square Brackets : ```[]```
+* Curly Brackets : ```{}```
+
+## Approach & Efficiency
+Create a method that takes a string. Iterate each character of the string. Verify if each item in the string is an open bracket and if is a bracket it will store it into a temporary stack place holder.</br>check if the following characters have any close bracket matching the open one.</br>If they do will pop the open bracket inside the place holder.</br>If at the end, the place holder is empty it means that matching brackets were found in the string.
+</br>
+
+**Big O** is O(n)
+
+## Solution
+![challenge13](../src/assets/challenge13.jpg)</br></br><a href="#top">Back to top</a>
 
 
 
