@@ -45,3 +45,50 @@ public class FizzBuzzTree extends Tree {
         fizzBuzzTree(node.right);
     }
 }
+
+// NICK'S CODE
+public class FizzBuzz {
+    public BinaryTree<String> fizzbuzz(BinaryTree<String> original){
+        BinaryTree<String> sapling = new BinaryTree<String>();
+        sapling.root = traverse(sapling.root);
+        return sapling;
+    }
+//begin boiler plate
+    public Node traverse(Node me){
+        if(me == null){
+            return null;
+        }
+        //end boiler plate
+        Node leftNodes = traverse(me.left);
+        Node rightNodes = traverse(me.right);
+
+        // i want to make a new tree and submmit fizzbuzz in there
+//        System.out.println(me.value);
+        Node<String> newNode =  new Node();
+        newNode.value = fizzbuzz(me.value);
+        newNode.left = leftNodes;
+        newNode.right = rightNodes;
+        return newNode;
+
+        // my values on the left
+
+
+    }
+
+    private String fizzbuzz(String number){
+        int num = Integer.parseInt(number);
+        if(num % 15 == 0) {
+            return "fizzbuzz";
+        }
+        if(num % 3 == 0){
+            return "fizz";
+        }
+        if(num%5==0){
+            return "buzz";
+        }
+        else{
+            return number;
+        }
+    }
+
+}
