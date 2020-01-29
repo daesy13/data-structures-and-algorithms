@@ -82,6 +82,7 @@ public class Tree {
             return new ArrayList<>();
         }
         else {
+            resultBFS.add(node.value);
             if(node.left != null){
                 resultBFS.add(node.left.value);
             }
