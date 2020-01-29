@@ -73,4 +73,22 @@ public class Tree {
             return resultPostOrder;
         }
     }
+
+    // Reference: https://tutorialedge.net/artificial-intelligence/breadth-first-search-java/
+    private ArrayList<Integer> breadthFirst(Node node){
+        ArrayList<Integer> resultBFS = new ArrayList<>();
+
+        if (node == null){
+            return new ArrayList<>();
+        }
+        else {
+            if(node.left != null){
+                resultBFS.add(node.left.value);
+            }
+            if(node.right!=null){
+                resultBFS.add(node.right.value);
+            }
+        }
+        return resultBFS;
+    }
 }
