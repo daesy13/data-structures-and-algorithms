@@ -14,34 +14,34 @@ import code401challenges.tree.Tree;
 
 public class FizzBuzzTree extends Tree {
 
-    public FizzBuzzTree(Node<String> root) {
-        super(root);
-    }
-
-    // create a helper method
-    public void process(Node<String> node){
-        int num = Integer.parseInt(node.value);
-        if(num % 15 == 0 ){
-            node.value = "FizzBuzz";
-        }
-        else if (num % 3 == 0){
-            node.value = "Fizz";
-        }
-        else if (num % 5 == 0){
-            node.value = "Buzz";
-        }
-    }
-
-    public void fizzBuzzTree() {
-        fizzBuzzTree(this.root);
-    }
-
-    private void fizzBuzzTree(Node<String> node) {
-        if (node ==  null){
-            return;
-        }
-        process(node);
-        fizzBuzzTree(node.left);
-        fizzBuzzTree(node.right);
-    }
+//    public FizzBuzzTree(Node<String> root) {
+//        super(root);
+//    }
+//
+//    // create a helper method
+//    public void process(Node<String> node){
+//        int num = Integer.parseInt(node.value);
+//        if(num % 15 == 0 ){
+//            node.value = "FizzBuzz";
+//        }
+//        else if (num % 3 == 0){
+//            node.value = "Fizz";
+//        }
+//        else if (num % 5 == 0){
+//            node.value = "Buzz";
+//        }
+//    }
+//
+//    public void fizzBuzzTree() {
+//        fizzBuzzTree(this.root);
+//    }
+//
+//    private void fizzBuzzTree(Node<String> node) {
+//        if (node ==  null){
+//            return;
+//        }
+//        process(node);
+//        fizzBuzzTree(node.left);
+//        fizzBuzzTree(node.right);
+//    }
 }
