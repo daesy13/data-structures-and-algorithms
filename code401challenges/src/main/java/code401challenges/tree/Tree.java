@@ -1,6 +1,7 @@
 package code401challenges.tree;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 public class Tree {
     public Node root;
@@ -92,4 +93,26 @@ public class Tree {
         }
         return resultBFS;
     }
+
+    public int findMaximumValue(){
+        if (this.root == null){
+            throw new NoSuchElementException("sorry This tree is empty");
+        }
+        return findMaximumValue(this.root);
+    }
+
+    // Maximun Binary Tree
+    private int findMaximumValue(Node current){
+
+        int maxResult = current.value;
+
+        if (current.left != null){
+            maxResult = Math.max(maxResult,findMaximumValue(current.left));
+        }
+        if (current.right != null){
+            maxResult = Math.max(maxResult, findMaximumValue(current.right));
+        }
+        return maxResult;
+    }
+
 }
