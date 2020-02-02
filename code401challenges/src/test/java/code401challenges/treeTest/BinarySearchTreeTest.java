@@ -16,7 +16,7 @@ public class BinarySearchTreeTest {
         BinaryTree tree = new BinaryTree(root);
         assertEquals(6, tree.root.value);
     }
-    
+
     @Test
     public void binarySearchTreeAddTest(){
        Node newNode = new Node(10);
