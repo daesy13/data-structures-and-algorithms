@@ -34,7 +34,7 @@ public class BinarySearchTree {
 
     // prevents anyone from calling add in an unintended way
     // overloading method
-    private Node add(Node root, int value){
+    public Node add(Node root, int value){
         // if the tree is empty return the new value
         if (root == null){
             // this case solves insert being called on an empty tree
