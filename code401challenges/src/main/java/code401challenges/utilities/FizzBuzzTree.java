@@ -9,10 +9,10 @@ package code401challenges.utilities;
 // If the value is not divisible by 3 or 5, simply turn the number into a String.
 // Return the new tree.
 
+import code401challenges.tree.BinaryTree;
 import code401challenges.tree.Node;
-import code401challenges.tree.Tree;
 
-public class FizzBuzzTree extends Tree {
+public class FizzBuzzTree extends BinaryTree {
 
 //    public FizzBuzzTree(Node<String> root) {
 //        super(root);
