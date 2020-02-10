@@ -32,10 +32,10 @@ public class FizzBuzzTreeTest {
         assertNotEquals(7, node.root.value);
     }
 
-    // CASE EDGE
+
     @Test
-    public void caseEdgeFizzBuzzTest(){
-        assertEquals("FizzBuzz", node.traverseFizzBuzzTree(););
+    public void stringFizzBuzzTest(){
+        assertNotEquals("FizzBuzz", node.root.left);
     }
 }
 
