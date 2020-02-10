@@ -207,7 +207,7 @@ O(1)
 <a name="challenge-16">code challenge 16</a></br></br>
 # CODE CHALLENGE 16
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/utilities/FizzBuzzTree.java)</br>
-[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/utilities/FizzBuzzTreeTest.java)</br></br>
 
 # Challenge Summary
 Create a method that takes a tree as a parameter and replace a string where the node goes depending if the number is divisible by 3, 5 or both (3 & 5) </br>
