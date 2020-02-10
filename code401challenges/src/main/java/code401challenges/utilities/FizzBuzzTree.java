@@ -38,4 +38,5 @@ public class FizzBuzzTree {
         traverseFizzBuzzTree(node.left);
         traverseFizzBuzzTree(node.right);
     }
+
 }

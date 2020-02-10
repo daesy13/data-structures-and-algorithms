@@ -1,41 +1,118 @@
-//package code401challenges.tree;
-//
-//import java.util.ArrayList;
-//
-//public class BinaryTree {
-//    public Node root;
-//
-//    public BinarySearchTree(){
-//        this.root = null;
-//    }
-//
-//    // constructor overloading
-//    public BinarySearchTree(Node <E> root){
-//        this.root = root;
-//    }
-//
-//    public ArrayList<E> preOrder(Node <E> root){
-//        ArrayList<E> temporary = new ArrayList<E>();
-//        if (root != null){
-//            temporary.add((E) root.left);
-//            preOrder(root.left);
-//            temporary.add((E) root.right);
-//            preOrder(root.right);
-//        }
-//        return temporary;
-//    }
-//
-//
-//    public ArrayList<E> inOrder(Node <E> root){
-//        ArrayList<E> temporary = new ArrayList<E>();
-//        if (root != null){
-//            temporary.add(root.left.value);
-//            preOrder(root.left);
-//            temporary.add(root.right.value);
-//            preOrder(root.right);
-//        }
-//        return temporary;}
-//
-//    //reference: https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java
-//    public ArrayList<E> postOrder(Node <E> root){}
-//}
+package code401challenges.tree;
+
+import java.util.ArrayList;
+import java.util.NoSuchElementException;
+
+// CODE CHALLENGE 15
+public class BinaryTree {
+    public Node root;
+
+    public BinaryTree(Node root){
+        this.root = root;
+    }
+
+    // method overloading
+    public BinaryTree(){
+        this.root = null;
+    }
+
+    // INORDER: Left, Root, Right
+    public ArrayList<Integer> inOrder(Node node){
+        if (node == null){
+            return new ArrayList<>();
+        }
+        else {
+            ArrayList<Integer> resultInOrder = new ArrayList<>();
+
+            ArrayList<Integer> left = inOrder(node.left);
+            resultInOrder.addAll(left);
+
+            resultInOrder.add(node.value);
+
+            ArrayList<Integer> right = inOrder(node.right);
+            resultInOrder.addAll(right);
+
+            return resultInOrder;
+        }
+    }
+
+
+    // PREORDER: Root, Left, Right
+    public ArrayList<Integer> preOrder(Node node){
+        if (node == null){
+            return new ArrayList<>();
+        }
+        else {
+            ArrayList<Integer> result = new ArrayList<>();
+            result.add(node.value);
+
+            ArrayList<Integer> left = preOrder(node.left);
+            result.addAll(left);
+
+            ArrayList<Integer> right = preOrder(node.right);
+            result.addAll(right);
+
+            return result;
+        }
+    }
+
+    // POSTORDER: Left, Right, Root
+    public ArrayList<Integer> postOrder(Node node){
+        if (node == null){
+            return new ArrayList<>();
+        }
+        else {
+            ArrayList<Integer> resultPostOrder = new ArrayList<>();
+
+            ArrayList<Integer> left = postOrder(node.left);
+            resultPostOrder.addAll(left);
+
+            ArrayList<Integer> right = postOrder(node.right);
+            resultPostOrder.addAll(right);
+
+            resultPostOrder.add(node.value);
+
+            return resultPostOrder;
+        }
+    }
+
+    // Reference: https://tutorialedge.net/artificial-intelligence/breadth-first-search-java/
+    private ArrayList<Integer> breadthFirst(Node node){
+        ArrayList<Integer> resultBFS = new ArrayList<>();
+
+        if (node == null){
+            return new ArrayList<>();
+        }
+        else {
+            resultBFS.add(node.value);
+            if(node.left != null){
+                resultBFS.add(node.left.value);
+            }
+            if(node.right!=null){
+                resultBFS.add(node.right.value);
+            }
+        }
+        return resultBFS;
+    }
+
+    public int findMaximumValue(){
+        if (this.root == null){
+            throw new NoSuchElementException("sorry This tree is empty");
+        }
+        return findMaximumValue(this.root);
+    }
+
+    // Maximun Binary Tree
+    private int findMaximumValue(Node current){
+
+        int maxResult = current.value;
+
+        if (current.left != null){
+            maxResult = Math.max(maxResult,findMaximumValue(current.left));
+        }
+        if (current.right != null){
+            maxResult = Math.max(maxResult, findMaximumValue(current.right));
+        }
+        return maxResult;
+    }
+}
