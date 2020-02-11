@@ -258,4 +258,4 @@ No additional space is being created. This array is being sorted in place. Keepi
 
 
 ## Solution
-![challenge6](../src/assets/challenge6.jpg)</br></br><a href="#top">Back to top</a>
+![sort](../src/assets/sort1.jpg)</br></br><a href="#top">Back to top</a>
