@@ -238,13 +238,11 @@ Return the new tree.</br></br>
 <!--  -->
 <a name="challenge-SORT">code challenge SORT</a></br></br>
 # CODE CHALLENGE SORT
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
-<!-- [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br> -->
 
-# Challenge Summary
+## Challenge Summary
 Sort items in the array. </br>
 
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/InsertionSort)</br>
 
 ## Challenge Description
 Selection Sort is a sortig algorithm that traverses the array multiple times as it slowly builds out the sorting sequence. The traversal keeps track of the minimum value and places it in the front of the array which should be incrimentally sorted.</br></br>
