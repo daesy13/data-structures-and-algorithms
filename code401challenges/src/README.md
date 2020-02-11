@@ -7,7 +7,9 @@
 [CODE CHALLENGE 12](#challenge-12)</br>
 [CODE CHALLENGE 13](#challenge-13)</br>
 [CODE CHALLENGE 15](#challenge-15)</br>
-[CODE CHALLENGE 16](#challenge-16)</br></br></br>
+[CODE CHALLENGE 16](#challenge-16)</br>
+[CODE CHALLENGE SORT](#challenge-SORT)</br></br></br>
+
 
 
 <a name="challenge-6">code challenge 6</a></br></br>
@@ -233,3 +235,27 @@ Return the new tree.</br></br>
 
 ## Solution
 ![challenge16](../src/assets/challenge16.jpg)</br></br><a href="#top">Back to top</a>
+<!--  -->
+<a name="challenge-SORT">code challenge SORT</a></br></br>
+# CODE CHALLENGE SORT
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+<!-- [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br> -->
+
+# Challenge Summary
+Sort items in the array. </br>
+
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+
+## Challenge Description
+Selection Sort is a sortig algorithm that traverses the array multiple times as it slowly builds out the sorting sequence. The traversal keeps track of the minimum value and places it in the front of the array which should be incrimentally sorted.</br></br>
+
+## Approach & Efficiency
+Time: O(n^2)</br>
+The basic operaiton of this algorithm is comparison. This will happen n number of times twice, because is using a nested loop. In conclusion the algorithm is going to be n squared.</br>
+
+Space: O(1)</br>
+No additional space is being created. This array is being sorted in place. Keeping the space at constant O(1).</br>
+
+
+## Solution
+![challenge6](../src/assets/challenge6.jpg)</br></br><a href="#top">Back to top</a>
