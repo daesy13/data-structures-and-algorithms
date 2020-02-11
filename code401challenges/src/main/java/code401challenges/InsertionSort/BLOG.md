@@ -29,4 +29,4 @@ SelectionSort(int []arr)
 ```  
 
 ## Solution
-![sort](../src/assets/sort.jpg)</br></br><a href="#top">Back to top</a>
+![sort](../src/assets/sort1.jpg)</br></br><a href="#top">Back to top</a>
