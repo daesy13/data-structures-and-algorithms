@@ -12,6 +12,7 @@
 [Code Challenge 13 - Multi-bracket Validation](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src#challenge-13)</br>
 [Code Challenge 15 - Binary Tree and BST Implementation](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src#challenge-15)</br>
 [Code Challenge 16](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-16)</br>
+[Code Challenge 18](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-18)</br>
 [Code Challenge Sort](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-SORT)</br>
 
 
