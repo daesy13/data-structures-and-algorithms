@@ -172,7 +172,7 @@ Create a method that takes a string. Iterate each character of the string. Verif
 
 ## Solution
 ![challenge13](../src/assets/challenge13.jpg)</br></br><a href="#top">Back to top</a>
-
+<!-- ****** -->
 <a name="challenge-15">code challenge 15</a></br></br>
 # CODE CHALLENGE 15
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/tree)</br>
@@ -205,7 +205,7 @@ O(1)
 **BinarySearchTree**
 - add
 - contains
-
+<!-- ****** -->
 <a name="challenge-16">code challenge 16</a></br></br>
 # CODE CHALLENGE 16
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/utilities/FizzBuzzTree.java)</br>
@@ -235,7 +235,37 @@ Return the new tree.</br></br>
 
 ## Solution
 ![challenge16](../src/assets/challenge16.jpg)</br></br><a href="#top">Back to top</a>
-<!--  -->
+
+<!-- ****** -->
+
+<a name="challenge-18">code challenge 18</a></br></br>
+# CODE CHALLENGE 18
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/tree/BinaryTree.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/treeTest/BinaryTreeTest.java)</br></br>
+
+# Challenge Summary
+Create a method that takes a tree as a parameter and and return an integer for the "Maximum Value".</br>
+
+## Challenge Description
+Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.</br></br>
+
+## Approach & Efficiency
+* Create a place holder for the first item and assign it to the ```maxValue```.
+* Set up current to be the root node and current.value to be ```maxValue```. 
+* Check the maxValue for all node.right and assign to our place holder.
+* Check the maxValue for all node.left and assign to our place holder.
+* Compare which one is the maxValue and return the final maxValue.
+
+</br>
+
+**Big O** 
+* Time: O(n)
+* Space: O(1)
+
+## Solution
+![challenge18](../src/assets/challenge18.jpg)</br></br><a href="#top">Back to top</a>
+
+<!-- *******-->
 <a name="challenge-SORT">code challenge SORT</a></br></br>
 # CODE CHALLENGE SORT
 
