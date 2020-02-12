@@ -8,6 +8,7 @@
 [CODE CHALLENGE 13](#challenge-13)</br>
 [CODE CHALLENGE 15](#challenge-15)</br>
 [CODE CHALLENGE 16](#challenge-16)</br>
+[CODE CHALLENGE 17](#challenge-17)</br>
 [CODE CHALLENGE 18](#challenge-18)</br>
 [CODE CHALLENGE SORT](#challenge-SORT)</br></br></br>
 
