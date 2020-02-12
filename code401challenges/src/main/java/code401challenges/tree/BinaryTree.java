@@ -77,7 +77,7 @@ public class BinaryTree {
     }
 
     // Reference: https://tutorialedge.net/artificial-intelligence/breadth-first-search-java/
-    private ArrayList<Integer> breadthFirst(Node node){
+    public static ArrayList<Integer> breadthFirst(Node node){
         ArrayList<Integer> resultBFS = new ArrayList<>();
 
         if (node == null){

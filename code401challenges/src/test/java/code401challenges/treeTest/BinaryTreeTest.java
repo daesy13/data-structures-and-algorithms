@@ -9,6 +9,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static code401challenges.tree.BinaryTree.breadthFirst;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
@@ -109,4 +110,39 @@ public class BinaryTreeTest {
         int actual = tree.findMaximumValue();
         assertNotEquals(4,actual);
     }
+
+    // BREADTH-FIRST TEST HAPPY TEST
+    @Test
+    public void breadthFirstTest(){
+        Node root = new Node(5,
+                new Node(4),
+                new Node(6));
+        BinaryTree result = new BinaryTree(root);
+        ArrayList<Integer> actual = breadthFirst(result.root);
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(5, 4, 6));
+        assertEquals(expected, actual);
+    }
+
+    // BREADTH-FIRST TEST FAIL TEST
+    @Test
+    public void breadthFirstFailTest(){
+        Node root = new Node(5,
+                new Node(4),
+                new Node(6));
+        BinaryTree result = new BinaryTree(root);
+        ArrayList<Integer> actual = breadthFirst(result.root);
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(4, 5, 6));
+        assertNotEquals(expected, actual);
+    }
+
+    // BREADTH-FIRST EDGE CASE
+    @Test
+    public void breadthFirstEdgeCase(){
+        Node root = null;
+        BinaryTree result = new BinaryTree(root);
+        ArrayList<Integer> actual = breadthFirst(result.root);
+        ArrayList<Integer> expected = new ArrayList<>();
+        assertEquals(expected, actual);
+    }
+    
 }
