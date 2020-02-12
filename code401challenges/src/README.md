@@ -239,6 +239,37 @@ Return the new tree.</br></br>
 
 <!-- ****** -->
 
+<a name="challenge-17">code challenge 17</a></br></br>
+# CODE CHALLENGE 17
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/tree/BinaryTree.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/treeTest/BinaryTreeTest.java)</br></br>
+
+# Challenge Summary
+Create a method that takes a tree as a parameter and returns a list of values using breadth-first order.</br>
+
+## Challenge Description
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.</br></br>
+
+## Approach & Efficiency
+* Check is tree is null and return an empty list.
+* set ArrayList place holder to add values.
+* Add root value into ArrayList.
+* Check if left value is not null and add value into list.
+* Check if right value is not null and add value into list.
+* Use method recursively.
+* Return ArrayList. 
+
+</br>
+
+**Big O** 
+* Space is O(n)
+* Time is O(n)</br>
+
+## Solution
+![challenge17](../src/assets/challenge17.jpg)</br></br><a href="#top">Back to top</a>
+
+<!-- ****** -->
+
 <a name="challenge-18">code challenge 18</a></br></br>
 # CODE CHALLENGE 18
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/tree/BinaryTree.java)</br>
