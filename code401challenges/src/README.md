@@ -328,8 +328,8 @@ No additional space is being created. This array is being sorted in place. Keepi
 # Challenge Summary
 Merge Sort items from an array. 
 
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/mergeSort/mergeSort.java)</br>
-[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/mergeSortTest/mergeSortTest.java)</br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/mergeSort)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/mergeSortTest/MergeSortTest.java)</br>
 
 ## Challenge Description
 Sort items from an array into a helper array dividing the array into equal parts recursevely.</br>
