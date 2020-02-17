@@ -38,7 +38,7 @@ public class MergeSortTest {
     @Test(expected = IllegalArgumentException.class)
     public void mergeSortEdgeTest(){
         int[] input = {};
-        int[] actual = insertionSort(input);
+        int[] actual = mergeSort(input);
         assertEquals(input, actual);
     }
 }
