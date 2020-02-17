@@ -12,7 +12,7 @@
 [CODE CHALLENGE 18](#challenge-18)</br>
 [CODE CHALLENGE SORT](#challenge-SORT)</br>
 [CODE CHALLENGE MERGE-SORT](#challenge-MERGE-SORT)</br>
-[CODE CHALLENGE MERGE-SORT](#challenge-QUICK-SORT)</br></br></br>
+[CODE CHALLENGE QUICK-SORT](#challenge-QUICK-SORT)</br></br></br>
 
 
 <a name="challenge-6">code challenge 6</a></br></br>
