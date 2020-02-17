@@ -306,6 +306,7 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 Sort items in the array. </br>
 
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/InsertionSort)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/InsertionSortTest/InsertionSortTest.java)</br>
 
 ## Challenge Description
 Selection Sort is a sortig algorithm that traverses the array multiple times as it slowly builds out the sorting sequence. The traversal keeps track of the minimum value and places it in the front of the array which should be incrimentally sorted.</br></br>
