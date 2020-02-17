@@ -32,13 +32,12 @@ public class InsertionSortTest {
     }
 
     // EDGE CASE
-    @Test
-    public void insertionEdgeTest(){
+    // Ref: https://javarevisited.blogspot.com/2013/04/JUnit-tutorial-example-test-exception-thrown-by-java-method.html
+    @Test(expected = IllegalArgumentException.class)
+    public void testInsertionEdgeTest(){
         int[] input = {};
         int[] actual = insertionSort(input);
-        System.out.println("actual = " + actual);
-//        int[] expected = {9,5,4,11,25,45};
-//        System.out.println("actual = " + Arrays.toString(actual));
-        assertNotEquals("This array is empty, not able to perform with empty arrays\n", actual);
+        assertEquals(input, actual);
     }
+
 }
