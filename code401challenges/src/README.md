@@ -389,7 +389,7 @@ ALGORITHM Merge(left, right, arr)
 # Challenge Summary
 Quick Sort items from an array. 
 
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/quickSort/QuickSort.java)</br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/quickSort)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/quickSortTest/QuickSortTest.java)</br>
 
 ## Challenge Description
