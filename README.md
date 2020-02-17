@@ -15,6 +15,7 @@
 [Code Challenge 17](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-17)</br>
 [Code Challenge 18](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-18)</br>
 [Code Challenge Sort](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-SORT)</br>
+[Code Challenge Merge Sort](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-SORT)</br>
 
 
 <!-- # Challenge Summary

@@ -1,15 +1,22 @@
 package code401challenges.mergeSort;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class MergeSort {
-    public static List<Integer > mergeSort(List<Integer> arr){
-        int n = arr.size();
-        if (n > 1){
+    public static int[] mergeSort(int[] arr){
+        int n = arr.length;
+        if (n == 0){
+            throw new IllegalArgumentException("This array is empty, not able to perform with an empty array");
+        }
+        else if (n == 1){
+            return arr;
+        }
+
+        else if (n > 1){
             int mid = n/2;
-            List<Integer> left = arr.subList(0,mid);
-            List<Integer> right = arr.subList(mid, n);
+            // Ref: Michelle's code review
+            int[] left = Arrays.copyOfRange(arr, 0, mid);
+            int[] right = Arrays.copyOfRange(arr, mid, n);
 
             mergeSort(left);
             mergeSort(right);
@@ -19,28 +26,32 @@ public class MergeSort {
         return arr;
     }
 
-    private static void merge(List<Integer> left, List<Integer> right, List<Integer> arr){
+    // Helper Method
+    private static void merge(int[] left, int[] right, int[] arr){
         int i = 0;
         int j = 0;
         int k = 0;
 
-        int leftSize = left.size();
-        int rightSize = right.size();
-
-        while (i < leftSize && j < rightSize){
-            if(left.get(i) <= right.get(j)){
-                arr.add(k,left.get(i));
+        while (i < left.length && j < right.length){
+            if(left[i] < right[j]){
+                arr[k] = left[i];
+                k++;
                 i++;
             } else {
-                arr.add(k, right.get(j));
+                arr[k] = right[j];
+                k++;
                 j++;
             }
-            k++;
         }
-        if(i == leftSize){
-            arr.addAll(right);
+        if(i == left.length){
+            // add values in right
+           while(k < arr.length){
+               // ref: https://www.youtube.com/watch?v=yv6svAfoYik min=13:43
+               arr[k++] = right[j++];
+            }
+           // add values in left
         } else {
-            arr.addAll(left);
+            arr[k++] = left[i++];
         }
     }
 }
