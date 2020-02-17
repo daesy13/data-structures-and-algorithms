@@ -11,7 +11,7 @@
 [CODE CHALLENGE 17](#challenge-17)</br>
 [CODE CHALLENGE 18](#challenge-18)</br>
 [CODE CHALLENGE SORT](#challenge-SORT)</br>
-[CODE CHALLENGE SORT](#challenge-MERGE-SORT)</br></br></br>
+[CODE CHALLENGE MERGE-SORT](#challenge-MERGE-SORT)</br></br></br>
 
 
 <a name="challenge-6">code challenge 6</a></br></br>
@@ -379,7 +379,7 @@ ALGORITHM Merge(left, right, arr)
 ```  
 
 ## Solution
-<img src="../src/assets/mergeSort.jpg" alt="drawing" width="200"/>
+<img src="../src/assets/mergeSort.jpg" alt="drawing" width="600"/>
 <!-- ![sort](../src/assets/mergeSort.jpg) -->
 </br></br><a href="#top">Back to top</a>
 <!-- ****** -->
