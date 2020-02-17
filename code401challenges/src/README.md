@@ -379,7 +379,7 @@ ALGORITHM Merge(left, right, arr)
 ```  
 
 ## Solution
-<img src="../src/assets/mergeSort.jpg" alt="drawing" width="600"/>
+<img src="../src/assets/mergeSort.jpg" alt="drawing" width="800"/>
 <!-- ![sort](../src/assets/mergeSort.jpg) -->
 </br></br><a href="#top">Back to top</a>
 <!-- ****** -->
