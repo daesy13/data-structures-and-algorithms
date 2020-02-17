@@ -52,6 +52,6 @@ ALGORITHM Merge(left, right, arr)
 ```  
 
 ## Solution
-<img src="../../../../assets/mergeSort.jpg" alt="drawing" width="200"/>
+<img src="../../../../assets/mergeSort.jpg" alt="drawing" width="900"/>
 <!-- ![sort](../../../../assets/mergeSort.jpg) -->
 </br></br><a href="#top">Back to top</a>
