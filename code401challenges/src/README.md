@@ -440,3 +440,33 @@ ALGORITHM Swap(arr, i, low)
 ![quickSort](../src/assets/quickSort.jpg)</br></br><a href="#top">Back to top</a>
 
 <!-- ****** -->
+
+<a name="challenge-HASHTABLE">code challenge HASHTABLE</a></br></br>
+# Challenge Summary
+Merge Sort items from an array. 
+
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/hashtable)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/test/java/code401challenges)</br>
+
+## Challenge Description
+Implement a Hashtable with the following methods:</br>
+
+```add```: takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.</br>
+```get```: takes in the key and returns the value from the table.</br>
+```contains```: takes in the key and returns a boolean, indicating if the key exists in the table already.</br>
+```hash```: takes in an arbitrary key and returns an index in the collection.</br>
+
+## Approach & Efficiency
+**ADD**
+Time: O(n)</br>
+Space: O(n)</br></br>
+**GET**
+Time: O(1)</br>
+Space: O(1)</br></br>
+**CONTAINS**
+Time: O(1)</br>
+Space: O(1)</br></br>
+**HASH**
+Time: O(1)</br>
+</br></br><a href="#top">Back to top</a>
+<!-- ****** -->
