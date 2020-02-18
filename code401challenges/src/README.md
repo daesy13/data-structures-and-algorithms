@@ -457,16 +457,25 @@ Implement a Hashtable with the following methods:</br>
 ```hash```: takes in an arbitrary key and returns an index in the collection.</br>
 
 ## Approach & Efficiency
-**ADD**
+**ADD**</br>
 Time: O(n)</br>
 Space: O(n)</br></br>
-**GET**
+**GET**</br>
 Time: O(1)</br>
 Space: O(1)</br></br>
-**CONTAINS**
+**CONTAINS**</br>
 Time: O(1)</br>
 Space: O(1)</br></br>
-**HASH**
+**HASH**</br>
 Time: O(1)</br>
+
+## API
+**ADD**</br>
+Using linked list this add method add keys and values as nodes into the hash table.</br></br>
+**GET**</br>
+This method takes a key string as a parameter and return the string value assigned to the key.</br></br>
+**CONTAINS**</br>
+This method checks if the key contains a value, method will return a boolean true.</br></br>
+
 </br></br><a href="#top">Back to top</a>
 <!-- ****** -->
