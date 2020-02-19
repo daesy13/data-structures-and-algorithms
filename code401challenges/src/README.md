@@ -483,7 +483,7 @@ This method checks if the key contains a value, method will return a boolean tru
 <a name="challenge-RepeatedWord">code challenge Repeated-Word</a></br></br>
 # CODE CHALLENGE Repeated-Word
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/repeatedWord/RepeatedWord.java)</br>
-[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/repeatedWord/RepeatedWordTest.java)</br></br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/repeatedWordTest/RepeatedWordTest.java)</br></br>
 
 # Challenge Summary
 Creating a methods to takes a lengthy string and returns the first repeated word.</br>
