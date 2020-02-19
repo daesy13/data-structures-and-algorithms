@@ -12,7 +12,8 @@
 [CODE CHALLENGE 18](#challenge-18)</br>
 [CODE CHALLENGE SORT](#challenge-SORT)</br>
 [CODE CHALLENGE MERGE-SORT](#challenge-MERGE-SORT)</br>
-[CODE CHALLENGE QUICK-SORT](#challenge-QUICK-SORT)</br></br></br>
+[CODE CHALLENGE QUICK-SORT](#challenge-QUICK-SORT)</br>
+[CODE CHALLENGE REPEATED-WORD](#challenge-REPEATED-WORD)</br></br></br>
 
 
 <a name="challenge-6">code challenge 6</a></br></br>
@@ -479,8 +480,8 @@ This method checks if the key contains a value, method will return a boolean tru
 
 </br></br><a href="#top">Back to top</a>
 <!-- ****** -->
-<a name="challenge-6">code challenge 6</a></br></br>
-# CODE CHALLENGE 6
+<a name="challenge-RepeatedWord">code challenge Repeated-Word</a></br></br>
+# CODE CHALLENGE Repeated-Word
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/repeatedWord/RepeatedWord.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/repeatedWord/RepeatedWordTest.java)</br></br>
 
