@@ -479,3 +479,29 @@ This method checks if the key contains a value, method will return a boolean tru
 
 </br></br><a href="#top">Back to top</a>
 <!-- ****** -->
+<a name="challenge-6">code challenge 6</a></br></br>
+# CODE CHALLENGE 6
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/repeatedWord/RepeatedWord.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/repeatedWord/RepeatedWordTest.java)</br></br>
+
+# Challenge Summary
+Creating a methods to takes a lengthy string and returns the first repeated word.</br>
+
+## Challenge Description
+* Create a method that accepts a lengthy string parameter.
+* Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.</br></br>
+
+## Approach & Efficiency
+* Create a hashset place holder to store each word from the sentence.
+* For loop thru each word from the sentence.
+* Split each word from the sentence by the empty space in between words.
+* Convert each word into lower case. 
+* Check if the next words contains in the hashset place holder.
+* if it contains return the word.</br>
+
+**Big O**</br>
+Time: O(n)</br>
+Space: O(1)</br>
+
+## Solution
+![RepeatedWord](../src/assets/repeatedWord.jpg)</br></br><a href="#top">Back to top</a>
