@@ -1,46 +1,102 @@
 package code401challenges.hashtable;
 
+import java.util.LinkedList;
+
 // Ref: https://frontrowviews.com/Home/Event/Play/5e1929fdeee6d91a18544057
-public class Hashtable {
-    public int size;
-    public Node[] map;
+// Ref: https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/
+public class Hashtable<K, V> {
+
+    // here the bucketArray is used to store arrays of keys with their respectives values
+    private LinkedList<HashNode<K, V>> bucketArray;
+
+    // number of capacity of the linkList
+    private int numBuckets;
+
+    // current size of linkList
+    private int size;
 
     public Hashtable(int size){
-        this.size = size;
-        this.map = new Node[size];
+        this.numBuckets = size;
+        this.bucketArray = new LinkedList<>();
+        // Create empty chains
+        for (int i = 0; i < numBuckets; i++)
+            bucketArray.add(null);
     }
 
-    private int hash(String key){
-        int hashValue = 0;
-        for(int i = 0; i < key.length(); i++){
-            hashValue += (int) key.charAt(i);
-        }
-        hashValue = (hashValue * 599) % this.size;
-        return hashValue;
+    // HASH METHOD
+    private int hash(K key){
+        int hashValue = key.hashCode();
+        return hashValue % numBuckets;
     }
 
-    public void add(String key, String value){
-        int hashKey = hash(key);
-        if(map[hashKey] == null){
-            map[hashKey] = new Node(key, value);
+    // ADD METHOD
+    public void add(K key, V value){
+
+        //finding head of chain for given key
+        int bucketIndex = hash(key);
+        HashNode<K, V> head = bucketArray.get(bucketIndex);
+
+        // check if key is already present
+        while (head != null) {
+            if(head.key.equals(key)) {
+                head.value = value;
+                return;
+            }
+
+            head = head.next;
         }
-        else {
-            Node runner = map[hashKey];
-            map[hashKey] = new Node(key, value);
-            map[hashKey].next = runner;
+
+        // inserting key in chain
+        size++;
+        head = bucketArray.get(bucketIndex);
+        HashNode<K, V> newNode = new HashNode<K, V>(key, value,null);
+        newNode.next = head;
+        bucketArray.set(bucketIndex, newNode);
+
+        // if load factor goes beyond the limit
+        if((1 * size)/numBuckets >= 0.7) {
+            LinkedList<HashNode<K, V>> temp = bucketArray;
+            bucketArray = new HashNode<K, V>(key, value, null);
+            numBuckets = 2 * numBuckets;
+            size = 0;
+
+            for (int i = 0; i < numBuckets; i++) {
+                bucketArray.add(null);
+            }
+
+            for (HashNode<K, V> headNode : temp) {
+                while (headNode != null) {
+                    add(headNode.key, headNode.value);
+                    headNode = headNode.next;
+                }
+            }
         }
     }
 
-    public String get(String key){
-        int hashKey = hash(key);
-        if(map[hashKey] != null){
-            return map[hashKey].value;
+    // GET METHOD
+    public V get(K key) {
+        int bucketIndex = hash(key);
+        HashNode<K, V> bucketty = bucketArray.get(bucketIndex);
+
+        while (bucketty != null) {
+            if (bucketty.key.equals(key)) {
+                return bucketty.value;
+            }
+            bucketty = bucketty.next;
         }
         return null;
     }
 
-    public boolean contains(String key){
-        int hashKey = hash(key);
-        return map[hashKey] != null;
+    // CONTAINS METHOD
+    public boolean contains(K key){
+        int bucketIndex = hash(key);
+        HashNode<K, V> bucketty = bucketArray.get(bucketIndex);
+        while (bucketty != null){
+            if (bucketty.key.equals(key)){
+                return true;
+            }
+            bucketty = bucketty.next;
+        }
+        return false;
     }
 }
