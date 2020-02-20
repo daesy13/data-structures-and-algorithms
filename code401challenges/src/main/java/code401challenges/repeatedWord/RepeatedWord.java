@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class RepeatedWord {
     public static String repeatedWord(String sentence){
         HashSet<String> container = new HashSet<>();
-        for(String word : sentence.split(" ")){
+        for(String word : sentence.split("[, ?.@]+")){
             word = word.toLowerCase();
             if(container.contains(word)){
                 return word;
