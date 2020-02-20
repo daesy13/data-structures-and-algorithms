@@ -14,6 +14,15 @@ public class RepeatedWordTest {
     String expected = "it";
     assertEquals(expected, actual);
     }
+
+    @Test
+    public void repeatedWordWithPunctuationTest(){
+        String input = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know" +
+                " what I was doing in New York...";
+        String actual = repeatedWord(input);
+        String expected = "summer";
+        assertEquals(expected, actual);
+    }
     
     @Test
     public void repeatedWordEdgeCase(){
