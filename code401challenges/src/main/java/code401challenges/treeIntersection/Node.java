@@ -2,6 +2,8 @@ package code401challenges.treeIntersection;
 
 public class Node {
     public int value;
+
+    public Node root;
     public Node left;
     public Node right;
 
