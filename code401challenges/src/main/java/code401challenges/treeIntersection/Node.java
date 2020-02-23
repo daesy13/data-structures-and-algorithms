@@ -25,4 +25,6 @@ public class Node {
         this.left = leftNode;
         this.right = rightNode;
     }
+
+
 }
