@@ -18,7 +18,8 @@
 [Code Challenge Merge Sort](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-MERGE-SORT)</br>
 [Code Challenge Quick Sort](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-QUICK-SORT)</br>
 [Code Challenge Hash Table Implementation](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-HASHTABLE)</br>
-[Code Challenge RepeatedWord](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-RepeatedWord)
+[Code Challenge RepeatedWord](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-RepeatedWord)</br>
+[Code Challenge TreeIntersection](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/README.md#challenge-TreeIntersection)</br>
 
 
 <!-- # Challenge Summary
