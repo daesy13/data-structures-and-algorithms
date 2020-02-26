@@ -528,9 +528,9 @@ Creating a methods to takes two trees and returns a list of matching values.</br
 * If values of Second Tree are in First tree and not into matching values add values int matching values holder
 * return matching values Array</br></br>
 
-**Big O** 
-Time: is O(n)
-Space: is O(n^2)
+**Big O** </br>
+Time: is O(n) </br>
+Space: is O(n^2) </br>
 
 ## Solution
 ![challenge33](../src/assets/challenge33.jpg)</br></br><a href="#top">Back to top</a>
