@@ -482,7 +482,7 @@ This method checks if the key contains a value, method will return a boolean tru
 </br></br><a href="#top">Back to top</a>
 <!-- ****** -->
 <a name="challenge-RepeatedWord">code challenge Repeated-Word</a></br></br>
-# CODE CHALLENGE Repeated-Word
+# CODE CHALLENGE Repeated-Word</br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/repeatedWord/RepeatedWord.java)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/repeatedWordTest/RepeatedWordTest.java)</br></br>
 
@@ -509,7 +509,7 @@ Space: O(1)</br>
 ![RepeatedWord](../src/assets/repeatedWord.jpg)</br></br><a href="#top">Back to top</a>
 <!-- ****** -->
 <a name="challenge-TreeIntersection">code challenge 33</a></br></br>
-#challenge-TreeIntersection
+#challenge-TreeIntersection</br>
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/treeIntersection)</br>
 [LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/treeIntersectionTest/TreeIntersectionTest.java)</br></br>
 
@@ -517,8 +517,8 @@ Space: O(1)</br>
 Creating a methods to takes two trees and returns a list of matching values.</br>
 
 ## Challenge Description
-- [ ] Write a method called tree_intersection that takes two binary tree parameters.
-- [ ] Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.</br></br>
+- [x] Write a method called tree_intersection that takes two binary tree parameters.
+- [x] Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.</br></br>
 
 ## Approach & Efficiency
 * Store values of the first tree into a hashset
