@@ -13,7 +13,8 @@
 [CODE CHALLENGE SORT](#challenge-SORT)</br>
 [CODE CHALLENGE MERGE-SORT](#challenge-MERGE-SORT)</br>
 [CODE CHALLENGE QUICK-SORT](#challenge-QUICK-SORT)</br>
-[CODE CHALLENGE REPEATED-WORD](#challenge-RepeatedWord)</br></br></br>
+[CODE CHALLENGE REPEATED-WORD](#challenge-RepeatedWord)</br>
+[CODE CHALLENGE TREE-INTERSECTIO](#challenge-TreeIntersection)</br></br></br>
 
 
 <a name="challenge-6">code challenge 6</a></br></br>
@@ -506,3 +507,31 @@ Space: O(1)</br>
 
 ## Solution
 ![RepeatedWord](../src/assets/repeatedWord.jpg)</br></br><a href="#top">Back to top</a>
+<!-- ****** -->
+<a name="challenge-TreeIntersection">code challenge 33</a></br></br>
+#challenge-TreeIntersection
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+
+# Challenge Summary
+Creating a methods to takes two trees and returns a list of matching values.</br>
+
+## Challenge Description
+- [ ] Write a method called tree_intersection that takes two binary tree parameters.
+- [ ] Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.</br></br>
+
+## Approach & Efficiency
+* Store values of the first tree into a hashset
+* Create place holder for matching values
+* Store Values of second tree into a List
+* Iterate List and compare values
+* If values of Second Tree are in First tree and not into matching values add values int matching values holder
+* return matching values Array</br></br>
+
+**Big O** 
+Time: is O(n)
+Space: is O(n^2)
+
+## Solution
+![challenge33](../src/assets/challenge33.jpg)</br></br><a href="#top">Back to top</a>
+<!-- ****** -->
