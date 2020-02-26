@@ -14,7 +14,7 @@
 [CODE CHALLENGE MERGE-SORT](#challenge-MERGE-SORT)</br>
 [CODE CHALLENGE QUICK-SORT](#challenge-QUICK-SORT)</br>
 [CODE CHALLENGE REPEATED-WORD](#challenge-RepeatedWord)</br>
-[CODE CHALLENGE TREE-INTERSECTIO](#challenge-TreeIntersection)</br></br></br>
+[CODE CHALLENGE TREE-INTERSECTION](#challenge-TreeIntersection)</br></br></br>
 
 
 <a name="challenge-6">code challenge 6</a></br></br>
@@ -510,8 +510,8 @@ Space: O(1)</br>
 <!-- ****** -->
 <a name="challenge-TreeIntersection">code challenge 33</a></br></br>
 #challenge-TreeIntersection
-[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
-[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/code401challenges/treeIntersection)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/treeIntersectionTest/TreeIntersectionTest.java)</br></br>
 
 # Challenge Summary
 Creating a methods to takes two trees and returns a list of matching values.</br>
