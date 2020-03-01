@@ -3,13 +3,10 @@ package code401challenges.graph;
 // Reference: https://www2.cs.duke.edu/courses/cps100e/fall10/class/11_Bacon/code/Graph.html
 // Reference: https://www.geeksforgeeks.org/graph-and-its-representations/
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Graph<E> {
-    private Map<Node, Set<Node>> vertices;
+    private Map<Vertex, Set<Edge>> vertices;
 
     public Graph(){
         vertices = new HashMap<>();
@@ -18,13 +15,39 @@ public class Graph<E> {
 //Adds a new node to the graph
 //Takes in the value of that node
 //Returns the added node
-    public Node addNode(E value){
-        Node newNode;
+    public void addNode(E value){
         if (value != null){
-            newNode = new Node(value);
+            Vertex newNode;
+            newNode = new Vertex(value);
             vertices.putIfAbsent(newNode, new HashSet<>());
-            return newNode;
         }
-        return null;
     }
+
+    public void addEdge(Vertex from, Vertex to, int weight){
+        if (vertices.containsKey(from) && vertices.containsKey(to)) {
+            // create an edge from to "to"
+            Edge fromToEdge = new Edge<Vertex>(from, to, weight);
+            Set<Edge> getFromNeighbor = vertices.get(from);
+            getFromNeighbor.add(fromToEdge);
+
+            // create an edge "to" to "from"
+            Edge toFromEdge = new Edge<Vertex>(to, from, weight);
+            Set<Edge> getToNeighbor = vertices.get(to);
+            getToNeighbor.add(toFromEdge);
+        }
+    }
+
+    public Set<Vertex> getNodes(){
+        return vertices.keySet();
+    }
+
+    public Set<Edge> getNeighbors(Vertex vertex){
+        return vertices.get(vertex);
+    }
+
+    public int getSize(){
+        return vertices.size();
+    }
+
+
 }
