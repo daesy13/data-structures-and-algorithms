@@ -13,35 +13,28 @@ import static org.junit.Assert.assertEquals;
 
 public class GraphTest {
 
-    @Test
-    public void addNodeTest(){
-        Graph input = new Graph();
+    Graph<Integer> input;
+
+    @Before
+    public void initGraph() {
+        input = new Graph<Integer>();
         input.addNode(0);
         input.addNode(1);
         input.addNode(2);
         input.addNode(3);
+    }
+
+    @Test
+    public void addNodeTest(){
         int actual =  input.getSize();
         int expected = 4;
         assertEquals(expected, actual);
     }
 
-
-
     @Test
     public void addEdgeTest(){
-        Graph initial = new Graph();
-        node1 = initial.addNode(0);
-        initial.addNode(1);
-        initial.addNode(2);
-        initial.addNode(3);
-//        Graph input = new Graph();
-//        input.addEdge(0,1,10);
-//        input.addEdge(1);
-//        input.addEdge(2);
-//        input.addEdge(3);
-        int actual =  initial.getSize();
-        int expected = 4;
-        assertEquals(expected, actual);
+        // ******When adding edge is asking for Vertex input instead of integer******
+//        input.addEdge(0, 1,100);
     }
 
 }

@@ -25,7 +25,7 @@ public class Graph<E> {
 
     public void addEdge(Vertex from, Vertex to, int weight){
         if (vertices.containsKey(from) && vertices.containsKey(to)) {
-            // create an edge from to "to"
+            // create an edge "from" to "to"
             Edge fromToEdge = new Edge<Vertex>(from, to, weight);
             Set<Edge> getFromNeighbor = vertices.get(from);
             getFromNeighbor.add(fromToEdge);
