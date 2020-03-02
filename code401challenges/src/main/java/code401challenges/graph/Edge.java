@@ -1,26 +1,26 @@
 package code401challenges.graph;
 
 public class Edge<E> {
-    E directed;
     E from;
-    int weighted;
+    E to;
+    int weight;
 
-    public Edge(E directed, E from, int weighted) {
-        this.directed = directed;
+    public Edge(E from, E to, int weight) {
         this.from = from;
-        this.weighted = weighted;
+        this.to = to;
+        this.weight = weight;
     }
 
-    public int getWeighted() {
-        return weighted;
+    public int getWeight() {
+        return weight;
     }
 
     @Override
     public String toString() {
         return "Edge{" +
-                "directed=" + directed +
-                ", from=" + from +
-                ", weighted=" + weighted +
+                "from=" + from +
+                ", to=" + to +
+                ", weight=" + weight +
                 '}';
     }
 }

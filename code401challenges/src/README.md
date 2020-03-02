@@ -14,9 +14,11 @@
 [CODE CHALLENGE MERGE-SORT](#challenge-MERGE-SORT)</br>
 [CODE CHALLENGE QUICK-SORT](#challenge-QUICK-SORT)</br>
 [CODE CHALLENGE REPEATED-WORD](#challenge-RepeatedWord)</br>
-[CODE CHALLENGE TREE-INTERSECTION](#challenge-TreeIntersection)</br></br></br>
+[CODE CHALLENGE TREE-INTERSECTION](#challenge-TreeIntersection)</br>
+[CODE CHALLENGE GRAPH](#challenge-Graph)</br>
+</br></br></br>
 
-
+<!-- ************* -->
 <a name="challenge-6">code challenge 6</a></br></br>
 # CODE CHALLENGE 6
 [LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
@@ -44,6 +46,8 @@ if stops it will stops at target and proceed to add new node after the target.</
 
 ## Solution
 ![challenge6](../src/assets/challenge6.jpg)</br></br><a href="#top">Back to top</a>
+
+<!-- ************* -->
 
 <a name="challenge-7">code challenge 7</a></br></br>
 # CODE CHALLENGE 7
@@ -534,4 +538,43 @@ Space: is O(n^2) </br>
 
 ## Solution
 ![challenge33](../src/assets/challenge33.jpg)</br></br><a href="#top">Back to top</a>
+
+<!-- ************* -->
+
+<a name="challenge-35">code challenge 35</a></br></br>
+# CODE CHALLENGE 35
+[LINK TO CODE](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/linkedList/LinkedList.java)</br>
+[LINK TO TEST](https://github.com/daesy13/data-structures-and-algorithms/blob/master/code401challenges/src/test/java/code401challenges/linkedList/LinkedListTest.java)</br></br>
+
+# Challenge Summary
+Creating a methods to insert new Graph node values, as well as adding, also adding edges, get nodes, get neighbors and finally finding the size.</br>
+
+## Challenge Description
+Implement your own Graph. The graph should be represented as an adjacency list, and should include the following methods:
+
+```AddNode()```
+* Adds a new node to the graph
+* Takes in the value of that node
+* Returns the added node
+```AddEdge()```
+* Adds a new edge between two nodes in the graph
+* Include the ability to have a “weight”
+* Takes in the two nodes to be connected by the edge
+  * Both nodes should already be in the Graph
+```GetNodes()```
+* Returns all of the nodes in the graph as a collection (set, list, or similar)
+```GetNeighbors()```
+* Returns a collection of edges connected to the given node
+* Takes in a given node
+* Include the weight of the connection in the returned collection
+```Size()```
+* Returns the total number of nodes in the graph</br></br>
+
+## Approach & Efficiency
+
+**Big O**</br>
+Time: is O(1)</br>
+Space: is O(n)</br>
+
+<a href="#top">Back to top</a>
 <!-- ****** -->

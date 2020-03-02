@@ -3,14 +3,11 @@ package code401challenges.graph;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Node<E>{
-    private E value;
-    E val;
-    Set<Edge> edges;
+public class Vertex<E>{
+    public E value;
 
-    Node(E val) {
+    Vertex(E val) {
         this.value = val;
-        edges = new HashSet<>();
     }
 
     @Override
