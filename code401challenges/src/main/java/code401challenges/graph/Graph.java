@@ -55,5 +55,4 @@ public class Graph<E> {
         return vertices.size();
     }
 
-
 }
