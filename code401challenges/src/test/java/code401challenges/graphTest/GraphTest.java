@@ -7,10 +7,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -59,5 +56,23 @@ public class GraphTest {
         assertTrue(actual.contains(vertex1));
         assertTrue(actual.contains(vertex2));
         assertTrue(actual.contains(vertex3));
+    }
+
+    @Test
+    public void breadthFirstTest() {
+        Graph<Integer> input = new Graph<>();
+        Edge edge01 = input.addEdge(vertex0, vertex1,100);
+        Edge edge02 = input.addEdge(vertex0, vertex2,100);
+        Edge edge03 = input.addEdge(vertex0, vertex3,100);
+
+
+        List<Vertex<Integer>> actual = input.breadthFirst(3);
+        System.out.println("actual = " + actual);
+        ArrayList<Integer> actualValues = new ArrayList<>();
+        for (Vertex<Edge<Integer>> node : actualValues) {
+            actualValues.add((Integer)node.getValue());
+        }
+//
+//        assertArrayEquals(expected, actual);
     }
 }

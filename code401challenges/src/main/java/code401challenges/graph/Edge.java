@@ -1,11 +1,11 @@
 package code401challenges.graph;
 
 public class Edge<E> {
-    E from;
-    E to;
+    Vertex<E> from;
+    Vertex<E> to;
     int weight;
 
-    public Edge(E from, E to, int weight) {
+    public Edge(Vertex<E> from, Vertex<E> to, int weight) {
         this.from = from;
         this.to = to;
         this.weight = weight;
